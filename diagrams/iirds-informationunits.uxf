@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>7</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>63</x>
+      <y>154</y>
+      <w>224</w>
+      <h>112</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Interface&gt;&gt;
+*InformationUnit*
+--
+title: Literal [0..1]
+revision: Literal [0..1]
+has-abstract [0..1]
+dateOfCreation: xsd:dateTimeStamp [0..1]
+dateOfLastModification: xsd:dateTimeStamp [0..1]
+language: Literal [0..*]
+rights: Literal [0..*]
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>322</x>
+      <y>266</y>
+      <w>140</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Class&gt;&gt;
+*Topic*</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>322</x>
+      <y>224</y>
+      <w>140</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Class&gt;&gt;
+*Document*</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>280</x>
+      <y>210</y>
+      <w>56</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;30.0;10.0;30.0;100.0;60.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>280</x>
+      <y>210</y>
+      <w>56</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;30.0;10.0;30.0;40.0;60.0;40.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>322</x>
+      <y>308</y>
+      <w>140</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Class&gt;&gt;
+*Fragment*</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>280</x>
+      <y>210</y>
+      <w>56</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;30.0;10.0;30.0;160.0;60.0;160.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>175</x>
+      <y>84</y>
+      <w>21</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>280</x>
+      <y>210</y>
+      <w>56</w>
+      <h>168</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;30.0;10.0;30.0;220.0;60.0;220.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>245</x>
+      <y>259</y>
+      <w>91</w>
+      <h>154</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m2=0..*
+is-part-
+of-
+package</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;190.0;110.0;190.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>133</x>
+      <y>259</y>
+      <w>119</w>
+      <h>98</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..1
+is-
+replace
+ment-
+of</panel_attributes>
+    <additional_attributes>130.0;10.0;130.0;80.0;10.0;80.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>112</x>
+      <y>35</y>
+      <w>147</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Interface&gt;&gt;
+*iirdsDomainEntity*
+--
+description: Literal [0..*]
+synonym: Literal [0..*]</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>322</x>
+      <y>350</y>
+      <w>140</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Class&gt;&gt;
+*Package*
+--
+iirdsVersion: Literal [1]
+formatRestriction: Literal [0..1]
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

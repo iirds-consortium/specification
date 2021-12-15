@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>5</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>35</x>
+      <y>50</y>
+      <w>165</w>
+      <h>85</h>
+    </coordinates>
+    <panel_attributes>
+&lt;&lt;Interface&gt;&gt;
+*InformationUnit*
+--
+title: Literal [0..1]
+revision: Literal [0..1]
+has-abstract [0..1]
+dateOfCreation: xsd:dateTimeStamp [0..1]
+dateOfLastModification: xsd:dateTimeStamp [0..1]
+language: Literal [0..*]
+rights: Literal [0..*]
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>295</x>
+      <y>55</y>
+      <w>130</w>
+      <h>65</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Class&gt;&gt;
+*ContentLifecycleStatus*
+--
+statusComment: Literal [0..1]
+dateOfEffect: xsd:dateTimeStamp [0..1]
+dateOfExpire: xsd:dateTimeStamp [0..1]
+dateOfStatus: xsd:dateTimeStamp [0..1]
+purpose: Literal [0..1]
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>510</x>
+      <y>75</y>
+      <w>105</w>
+      <h>25</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Class&gt;&gt;
+*ContentLifecylceStatusValue*</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>195</x>
+      <y>85</y>
+      <w>110</w>
+      <h>25</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m2=0..*
+has-content-lifecycle-status</panel_attributes>
+    <additional_attributes>10.0;20.0;200.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>420</x>
+      <y>80</y>
+      <w>100</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m2=1
+has-content-
+lifecycle-
+status-value
+</panel_attributes>
+    <additional_attributes>10.0;20.0;180.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>320</x>
+      <y>180</y>
+      <w>65</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Class&gt;&gt;
+*Party*
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>345</x>
+      <y>115</y>
+      <w>60</w>
+      <h>75</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m2=0..1
+relates-to-party</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;130.0</additional_attributes>
+  </element>
+</diagram>

@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>9</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>36</x>
+      <y>252</y>
+      <w>288</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Interface&gt;&gt;
+*InformationUnit*
+--
+title: Literal [0..1]
+revision: Literal [0..1]
+has-abstract [0..1]
+dateOfCreation: xsd:dateTimeStamp [0..1]
+dateOfLastModification: xsd:dateTimeStamp [0..1]
+language: Literal [0..*]
+rights: Literal [0..*]
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>486</x>
+      <y>351</y>
+      <w>117</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Class&gt;&gt;
+*Component*</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>486</x>
+      <y>297</y>
+      <w>117</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Class&gt;&gt;
+*ProductVariant*</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>495</x>
+      <y>378</y>
+      <w>126</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..*
+
+has-component</panel_attributes>
+    <additional_attributes>100.0;10.0;100.0;80.0;10.0;80.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>297</x>
+      <y>144</y>
+      <w>144</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Class&gt;&gt;
+*IdentityDomain*
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>585</x>
+      <y>144</y>
+      <w>117</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Class&gt;&gt;
+*Party*
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>315</x>
+      <y>171</y>
+      <w>324</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m2=0..*
+relates-to-party</panel_attributes>
+    <additional_attributes>10.0;100.0;320.0;100.0;320.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>594</x>
+      <y>36</y>
+      <w>117</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Interface&gt;&gt;
+*vcard:Kind*
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>639</x>
+      <y>63</y>
+      <w>108</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m2=0..1
+relates-to-vcard</panel_attributes>
+    <additional_attributes>10.0;90.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>837</x>
+      <y>144</y>
+      <w>99</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Class&gt;&gt;
+*PartyRole*</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>693</x>
+      <y>144</y>
+      <w>162</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m2=0..1
+has-party-role</panel_attributes>
+    <additional_attributes>10.0;20.0;160.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>171</x>
+      <y>387</y>
+      <w>117</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..1
+is-
+replace
+ment-
+of</panel_attributes>
+    <additional_attributes>90.0;10.0;90.0;80.0;10.0;80.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>594</x>
+      <y>171</y>
+      <w>135</w>
+      <h>162</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..*
+relates-to-party</panel_attributes>
+    <additional_attributes>40.0;10.0;40.0;160.0;10.0;160.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>594</x>
+      <y>171</y>
+      <w>162</w>
+      <h>216</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..*
+
+relates-to-party</panel_attributes>
+    <additional_attributes>70.0;10.0;70.0;220.0;10.0;220.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>315</x>
+      <y>360</y>
+      <w>189</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..n
+relates-to-
+component</panel_attributes>
+    <additional_attributes>190.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>315</x>
+      <y>297</y>
+      <w>189</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..n
+relates-to-
+product-
+variant</panel_attributes>
+    <additional_attributes>190.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>432</x>
+      <y>144</y>
+      <w>171</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m2=0..1
+relates-to-party</panel_attributes>
+    <additional_attributes>10.0;20.0;170.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>774</x>
+      <y>261</y>
+      <w>234</w>
+      <h>117</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Class&gt;&gt;
+*ContentLifecycleStatus*
+--
+statusComment: Literal [0..1]
+dateOfEffect: xsd:dateTimeStamp [0..1]
+dateOfExpire: xsd:dateTimeStamp [0..1]
+dateOfStatus: xsd:dateTimeStamp [0..1]
+purpose: Literal [0..1]
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>675</x>
+      <y>171</y>
+      <w>117</w>
+      <h>171</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..*
+
+
+relates-to-party</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;170.0;110.0;170.0</additional_attributes>
+  </element>
+</diagram>
