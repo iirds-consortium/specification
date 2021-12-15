@@ -17,7 +17,7 @@ This document defines the intelligent information Request and Delivery Standard:
 
 ## State of this document
 
-This document is published by the <a href="#who-defines-iirds-">iiRDS Consortium</a> and specifies version 1.1 of iiRDS.
+This document is published by the **iiRDS Consortium** and specifies version 1.1 of iiRDS.
 
 If you wish to make comments regarding this document, please send them to comment.iirds@tekom.de.
   
@@ -25,9 +25,7 @@ If you wish to make comments regarding this document, please send them to commen
 
 Sections marked as non-normative, as well as all authoring guidelines, diagrams, examples, and notes in this specification are non-normative. Everything else in this specification is normative.
 
-The keywords *MAY*, *MUST*, *MUST NOT*, *OPTIONAL*,
-      *RECOMMENDED*, *REQUIRED*, and *SHALL* are
-      to be interpreted as described in **rfc2119**.
+The keywords *MAY*, *MUST*, *MUST NOT*, *OPTIONAL*, *RECOMMENDED*, *REQUIRED*, and *SHALL* are to be interpreted as described in **rfc2119**.
 
 ## 2. Introduction
 
@@ -63,58 +61,58 @@ The keywords *MAY*, *MUST*, *MUST NOT*, *OPTIONAL*,
 
 #### [6.3.2 Media Files](sections/structure/rdfsmediafiles.md)
 
-#### [6.3.3 Metadata of Nested iiRDS Packages](sections/structure/rdfsnestedpackages.md)     
+#### [6.3.3 Metadata of Nested iiRDS Packages](sections/structure/rdfsnestedpackages.md)
 
 ### [6.4 Relations of InformationUnits](sections/structure/rdfsinfounitrelations.md)
 
 ### 6.5 Information Types
 
-#### [6.5.1 Types of Documents and Topics](sections/structure/rdfsinfotypes.md)     
+#### [6.5.1 Types of Documents and Topics](sections/structure/rdfsinfotypes.md)
 
-#### [6.5.2 Information Subjects](sections/structure/rfdsinfosubjects.md)     
+#### [6.5.2 Information Subjects](sections/structure/rfdsinfosubjects.md)
 
-### [6.6 Documentation Metadata](sections/structure/rdfsdocmetadata.md")
+### [6.6 Documentation Metadata](sections/structure/rdfsdocmetadata.md)
 
-### [6.7 Products and Components in iiRDS](sections/structure/rdfsproductcomponent.md")
+### [6.7 Products and Components in iiRDS](sections/structure/rdfsproductcomponent.md)
 
-### [6.8 Administrative Metadata](sections/structure/rdfsadministrative.md")
+### [6.8 Administrative Metadata](sections/structure/rdfsadministrative.md)
 
-### [6.9 Navigation](sections/structure/rdfsnavigation.md")
+### [6.9 Navigation](sections/structure/rdfsnavigation.md)
 
 ## 7. iiRDS Domains and Proprietary Extensions
   
-### [7.1 iiRDS Extension Scenarios](sections/structure/rdfsstandardextensions.md")
+### [7.1 iiRDS Extension Scenarios](sections/structure/rdfsstandardextensions.md)
 
-### [7.2 iiRDS Domain Extensions](sections/structure/rdfsdomainextensions.md")
+### [7.2 iiRDS Domain Extensions](sections/structure/rdfsdomainextensions.md)
 
-### [7.3 Proprietary iiRDS Extensions](sections/structure/rdfsproprietaryextensions.md")
+### [7.3 Proprietary iiRDS Extensions](sections/structure/rdfsproprietaryextensions.md)
 
   <!-- Content -->
 ## 8. Content formats in iiRDS
 
-### [8.1 Unrestricted iiRDS vs. iiRDS/A](sections/content/unrestricted_vs_a.md")
+### [8.1 Unrestricted iiRDS vs. iiRDS/A](sections/content/unrestricted_vs_a.md)
 
-### [8.2 Self-contained iiRDS/A Packages](sections/content/selfcontained-a.md")
+### [8.2 Self-contained iiRDS/A Packages](sections/content/selfcontained-a.md)
 
 ## [9. iiRDS/A Media Formats](sections/levels/mediaformats.md)
 
 ## 10. iiRDS XHTML5 Format
 
-### [10.1 Overview](sections/levels/html5format-overview.md")
+### [10.1 Overview](sections/levels/html5format-overview.md)
 
-### [10.2 iiRDS XHTML5](sections/levels/html5format-format.md")
+### [10.2 iiRDS XHTML5](sections/levels/html5format-format.md)
 
-### [10.3 Conformance Criteria](sections/levels/html5format-conformance.md")
+### [10.3 Conformance Criteria](sections/levels/html5format-conformance.md)
 
-### [10.4 Global Attributes](sections/levels/html5format-globalattributes.md")
+### [10.4 Global Attributes](sections/levels/html5format-globalattributes.md)
 
-### [10.5 Elements](sections/levels/html5format-elements.md")
+### [10.5 Elements](sections/levels/html5format-elements.md)
 
-### [10.6 Additional Semantic Tagging of Content](sections/levels/html5tagging.md")
+### [10.6 Additional Semantic Tagging of Content](sections/levels/html5tagging.md)
 
-[EXAMPLE 46: Tagging](sections/levels/html5tagging-example.html")
+[EXAMPLE 46: Tagging](sections/levels/html5tagging-example.html)
 
-### [10.7 Styling](sections/levels/html5format-styling.md")
+### [10.7 Styling](sections/levels/html5format-styling.md)
 
 ## A. Appendix
 
