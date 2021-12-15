@@ -16,7 +16,7 @@ The directory node structure provides users with information on the context of t
 The property `iirds:has-directory-structure-type` determines the type of the directory structure. The root node of a directory structure <em title="MUST in RFC 2119 context" class="rfc2119">MUST</em> have one property `iirds:has-directory-structure-type`. Only root nodes of a directory structure <em title="MUST in RFC 2119 context" class="rfc2119">MUST</em> have the property `iirds:has-directory-structure-type`.
 
 <pre class="example">
-    <img src="../../images/directoryStructure2.png" width="max-width"/>
+    <img src="images/directoryStructure2.png" width="max-width"/>
 </pre>
 
 <div class='note'>

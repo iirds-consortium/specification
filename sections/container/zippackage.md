@@ -5,7 +5,7 @@ An <dfn>iiRDS ZIP archive</dfn> is an iiRDS container implementation using a ZIP
 The file name of the iiRDS ZIP archive <em title="MUST in RFC 2119 context" class="rfc2119">MUST</em> feature the file name extension `.iirds`.
 
 <figure>
-  <img src="sections/container/zipcontainer.png" alt="iiRDS ZIP archive">
+  <img src="zipcontainer.png" alt="iiRDS ZIP archive">
   <figcaption>iiRDS ZIP Archive Structure</figcaption>
 </figure>
 

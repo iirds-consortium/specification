@@ -150,7 +150,7 @@ The following example shows a mapping ontology that combines the component tree 
 
 The following figure illustrates the mapping of a component tree in the iiRDS package to the external product ontology.
 <figure>
-  <img src="../../images/examples/ontologyMapping_small.png "Mapping of external product ontology"" alt="Mapping of external product ontology"/>
+  <img src="images/examples/ontologyMapping_small.png "Mapping of external product ontology"" alt="Mapping of external product ontology"/>
   <figcaption>Mapping of external product ontology</figcaption>
 </figure>
 

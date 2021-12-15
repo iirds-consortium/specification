@@ -17,7 +17,7 @@ All other files \(content, like PDF, HTML, media, Javascript, CSS, nested iiRDS 
 Exception: The root container <em title="MAY in RFC 2119 context" class="rfc2119">MAY</em> contain additional files that are necessary for the interoperability with other standards, e.g. [[VDI2770]]. iiRDS Consumers <em title="MUST in RFC 2119 context" class="rfc2119">MUST</em> ignore these files if they are not referenced by iiRDS metadata. 
 
 <figure>
-  <img src="sections/container/iirdscontainer.png" alt="iiRDS Container">
+  <img src="iirdscontainer.png" alt="iiRDS Container">
   <figcaption>iiRDS Container Structure</figcaption>
 </figure>
 
