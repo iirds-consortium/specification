@@ -15,7 +15,7 @@ https://creativecommons.org/licenses/by-nd/4.0/
 
 This document defines the intelligent information Request and Delivery Standard: iiRDS.</p>
 
-## State of this document
+## Status of this document
 
 This document is published by the **iiRDS Consortium** and specifies version 1.1 of iiRDS.
 
@@ -119,3 +119,5 @@ The keywords *MAY*, *MUST*, *MUST NOT*, *OPTIONAL*, *RECOMMENDED*, *REQUIRED*, a
 ### [A.1-4 iiRDS RDF Schema Reference](sections/structure/rdfsreference.md)
   
 ### [A.5 iiRDS Metadata Class Diagram](sections/structure/rdfsdiagrams.md)
+
+## [B. References](sections/structure/references.md)

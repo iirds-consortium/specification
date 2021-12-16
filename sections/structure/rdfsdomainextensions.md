@@ -10,7 +10,7 @@ Instances and classes of iiRDS domain extensions are contained in sub-namespaces
 * *iiRDS Software Domain:* Classes and instances of the iiRDS Software Domain are contained in the namespace
   http://iirds.tekom.de/iirds/domain/software.
 
-<div class="note">
+<div class="note">**NOTE**
 
 The iiRDS standard does not stipulate how to combine iiRDS core vocabulary with extension vocabulary.
 

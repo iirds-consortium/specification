@@ -9,7 +9,7 @@ The properties `iirds:relates-to-component` and `iirds:relates-to-product-varian
 
 An iiRDS package <em title="MAY in RFC 2119 context" class="rfc2119">MAY</em> model a component tree. The property `iirds:has-component` defines `part-of` relations for products and their components. The component tree is a proprietary iiRDS extension, it <em title="MUST in RFC 2119 context" class="rfc2119">MUST</em> be stored in the `metadata.rdf` of the iiRDS package. 
 
-<div class="note">
+<div class="note">**NOTE**
 
 iiRDS does not differentiate between components and products when modeling component trees.
 
@@ -150,7 +150,7 @@ The following example shows a mapping ontology that combines the component tree 
 
 The following figure illustrates the mapping of a component tree in the iiRDS package to the external product ontology.
 <figure>
-  <img src="images/examples/ontologyMapping_small.png "Mapping of external product ontology"" alt="Mapping of external product ontology"/>
+  <img src="../../images/examples/ontologyMapping_small.png" alt="Mapping of external product ontology"/>
   <figcaption>Mapping of external product ontology</figcaption>
 </figure>
 

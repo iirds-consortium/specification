@@ -4,7 +4,7 @@
 
 The XHTML document type defined by this specification is based on [XHTML5](#XHTML5). For details on [HTML5](#HTML5) vs. [XHTML5](#XHTML5), see https://www.w3.org/TR/2014/REC-html5-20141028/introduction.html#html-vs-xhtml. Thus iiRDS XHTML5 inherits all definitions of semantics, structure and processing behaviors from the [HTML5](#HTML5) specification unless otherwise specified. 
 
-<div class="note">
+<div class="note">**NOTE**
 
 A similar approach of defining a subset of [HTML5](#HTML5) for a specific purpose is HTMLBook. See [https://oreillymedia.github.io/HTMLBook/](https://oreillymedia.github.io/HTMLBook/) for details.
 
@@ -18,9 +18,10 @@ As such, iiRDS XHTML5 is characterized in the following ways:
 
 - iiRDS XHTML5 stylesheets <em title="MUST in RFC 2119 context" class="rfc2119">MUST</em> be in CSS format.
 
-<div class="note"> 
+<div class="note">**NOTE**
+
 The scope of iiRDS XHTML5 is to provide an easy-to-generate content transport and exchange format.
- 
+
 iiRDS XHTML5 is not meant as a presentation format. HTML5-capable browsers display a typical iiRDS XHTML5 file without additional effort but for state-of-the-art visualization and navigation, content delivery relies on additional transformations or stylesheets. Because iiRDS supports aggregation of content and harmonized access to content from different sources, this is a conscious decision.
 Consequently, HTML5 elements that control navigation, display, interactivity, etc. are omitted from the iiRDS XHTML5 definition. Examples of omitted elements are &lt;script&gt;, &lt;nav&gt;, and &lt;iframe&gt;.
 
