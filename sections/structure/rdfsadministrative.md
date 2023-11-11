@@ -4,11 +4,11 @@ All administrative metadata classes are subclasses of the class `iirds:Administr
 
 Administrative information is often used and stored in document management systems (DMS) or component content management systems (CCMS) for administrative purposes and <em title="MAY in RFC 2119 context" class="rfc2119">MAY</em> be added to an iiRDS entity. 
 
-Administrative metadata in iiRDS <em title="MAY in RFC 2119 context" class="rfc2119">MAY</em> be used in compliance with [[IEC82045-2]] and [[VDI2770]]. For further information, see the corresponding standard documents. 
+Administrative metadata in iiRDS <em title="MAY in RFC 2119 context" class="rfc2119">MAY</em> be used in compliance with [[IEC82045-2]], [[VDI2770]], [[IEC61360]] or [[ECLASS]]. For further information, see the corresponding standard documents. 
 
 <aside class="example" title="Examples of administrative metadata">
 
-Examples of administrative metadata are complex identifiers, content lifecycle status, and related parties or roles.
+Examples of administrative metadata are complex identifiers, external classifications, content lifecycle status, and related parties or roles.
 
 </aside>
 
@@ -71,7 +71,11 @@ Instances of class `iirds:IdentityDomain` <em title="MUST in RFC 2119 context" c
 &lt;/rdf:RDF&gt;
 </pre>
 
-<pre class="example" title="Product with an identity used for an item number">
+<aside class="example" title="Product with an identity used for an item number">
+
+The identifier reflects the identity of the product variant in an external system, for example a product information management system.
+
+<pre>
 &lt;iirds:ProductVariant rdf:about="http://myCompany.com/products/TableFan"&gt;
   &lt;iirds:has-identity&gt;
     &lt;iirds:Identity&gt;
@@ -82,6 +86,7 @@ Instances of class `iirds:IdentityDomain` <em title="MUST in RFC 2119 context" c
   &lt;rdfs:label&gt;Table fan&lt;/rdfs:label&gt;
 &lt;/iirds:ProductVariant&gt;
 </pre>
+</aside>
 
 
 <pre class="example" title="Identity domain with party information">
@@ -222,3 +227,86 @@ This `iirds:Component` has its manufacturer as a related party. In this example,
 &lt;/rdf:RDF&gt;
 </pre>
 </aside>
+
+## External Classification
+Instances of the `iirds:ExternalClassification` class are classifications of entities in the scope of a given domain. Instances of the classes `iirds:ProductVariant`,  `iirds:ProductFeature`, `iirds:Component`, `iirds:InformationObject`, and `iirds:InformationUnit` <em title="MAY in RFC 2119 context" class="rfc2119">MAY</em> have `iirds:has-external-classification` relations to `iirds:ExternalClassification` instances. `iirds:ExternalClassification` <em title="MUST in RFC 2119 context" class="rfc2119">MUST </em> be used only for mapping iiRDS resources to external classifications that do not provide IRIs. `iirds:ExternalClassifications` <em title="MUST NOT in RFC 2119 context" class="rfc2119">MUST NOT</em> be used instead of proprietary iiRDS extensions.
+
+<aside class="example" title="Use of external classifications">
+
+An iiRDS Generator uses iiRDS to store external classification metadata alongside built-in iiRDS metadata such as ECLASS or similar reference data libraries.
+
+</aside>
+
+An `iirds:ExternalClassification` instance consists of three parts: the identifier of the external classification, the domain of the external classification, and an optional version or date of the external classification. The classification identifier <em title="MUST in RFC 2119 context" class="rfc2119">MUST</em> be provided as a non-empty string in the `iirds:classificationIdentifier` property. The classification identifier <em title="MUST NOT in RFC 2119 context" class="rfc2119">MUST NOT</em> be used if that classification is already available as an RDF representation in iiRDS. The classification version <em title="MAY in RFC 2119 context" class="rfc2119">MAY</em> be provided as a non-empty string in the `iirds:classificationVersion` property.
+
+An external classification <em title="MUST in RFC 2119 context" class="rfc2119">MUST</em> point to exactly one domain by the `iirds:has-classification-domain` property. The domain is an instance of the `iirdsClassificationDomain` class.
+
+Instances of class `iirds:ClassificationDomain` <em title="MUST in RFC 2119 context" class="rfc2119">MUST</em> have an absolute IRI and <em title="MAY in RFC 2119 context" class="rfc2119">MAY</em> link to the custodian of the domain by the `iirds:has-party` property. Custodians are contained in instances of the `iirds:Party` class.
+
+Instances of class `iirds:ClassificationDomain` <em title="MAY in RFC 2119 context" class="rfc2119">MAY</em> have an `iirds:has-classification-type` relation that specifies the type of the classification in the domain. Three classification types for [[ECLASS]] and [[IEC61360]] are predefined in iiRDS: `http://iirds.tekom.de/iirds#EclassCodedName`,  `http://iirds.tekom.de/iirds#EclassIRDI`, and `http://iirds.tekom.de/iirds#CDD`.
+
+<aside class="example" title="Component with an external classification">
+The component `TableFan` has an external classification. The type of the classification is determined by the `iirds:ClassificationDomain` and its `iirds:has-classification-type`.
+<pre>
+&lt;iirds:Component rdf:about="http://myCompany.com/products/TableFan"&gt;
+  &lt;iirds:has-external-classification&gt;
+    &lt;iirds:ExternalClassification&gt;
+      &lt;rdfs:label xml:lang="en"&gt;29-17-01-01 Fan (household)&lt;/rdfs:label&gt;
+      &lt;iirds:classificationIdentifier&gt;0173-1#01-ACI075#015&lt;/iirds:classificationIdentifier&gt;
+      &lt;iirds:classificationVersion&gt;13.0&lt;/iirds:classificationVersion&gt;
+      &lt;iirds:has-classification-domain rdf:resource="http://supco.com/model/eclassBasicIrdi"/&gt;
+    &lt;/iirds:ExternalClassification&gt;
+  &lt;/iirds:has-external-classification&gt;
+&lt;/iirds:Component&gt;
+
+&lt;iirds:ClassificationDomain rdf:about="http://supco.com/model/eclassBasicIrdi"&gt;
+    &lt;rdfs:label xml:lang="en"&gt;SupCo ECLASS BASIC Model IRDI&lt;/rdfs:label&gt;
+    &lt;iirds:has-classification-type rdf:resource="http://iirds.tekom.de/iirds#EclassIRDI"/&gt;
+&lt;/iirds:ClassificationDomain&gt;  
+</pre>
+</aside>
+
+<aside class="example" title="Product property with ECLASS Classification">
+Product property of an inductive proximity switch's net weight with an external classification. The `iirds:classificationIdentifier` references the external classification of the net weight property in [[ECLASS]] Advanced by using an IRDI path.
+<pre>
+&lt;iirds:ProductProperty rdf:about="http://myCompany.com/products/NetWeight"&gt;
+  &lt;iirds:has-external-classification&gt;
+    &lt;iirds:ExternalClassification&gt;
+      &lt;rdfs:label xml:lang="en"&gt;Net Weight&lt;/rdfs:label&gt;
+      &lt;iirds:classificationIdentifier&gt;0173-1#02-AAR080#012/0173-1#02-AAQ640#012/0173-1#02-AAF040#007&lt;/iirds:classificationIdentifier&gt;
+      &lt;iirds:classificationVersion&gt;13.0&lt;/iirds:classificationVersion&gt;
+      &lt;iirds:has-classification-domain rdf:resource="http://supco.com/model/eclassAdvIrdi"/&gt;
+    &lt;/iirds:ExternalClassification&gt;
+  &lt;/iirds:has-external-classification&gt;
+&lt;/iirds:Component&gt;
+
+&lt;iirds:Component rdf:about="http://myCompany.com/products/InductProxSwitch"&gt;
+  &lt;iirds:relates-to-product-feature rdf:resource="http://myCompany.com/products/NetWeight"/&gt;
+  &lt;iirds:has-external-classification&gt;
+    &lt;iirds:ExternalClassification&gt;
+      &lt;rdfs:label xml:lang="en"&gt;27-27-40-01 Inductive proximity switch&lt;/rdfs:label&gt;
+      &lt;iirds:classificationIdentifier&gt;0173-1---ADVANCED_1_1#01-ADN934#012&lt;/iirds:classificationIdentifier&gt;
+      &lt;iirds:classificationVersion&gt;13.0&lt;/iirds:classificationVersion&gt;
+      &lt;iirds:has-classification-domain rdf:resource="http://supco.com/model/eclassAdvIrdi"/&gt;
+    &lt;/iirds:ExternalClassification&gt;
+  &lt;/iirds:has-external-classification&gt;
+&lt;/iirds:Component&gt;
+</pre>
+</aside>
+
+<pre class="example" title="Classification domain with party information">
+&lt;iirds:ClassificationDomain rdf:about="http://supco.com/model/eclassBasicIrdi"&gt;
+  &lt;rdfs:label xml:lang="en"&gt;SupCo ECLASS BASIC Model IRDI&lt;/rdfs:label&gt;
+  &lt;iirds:has-classification-type rdf:resource="http://iirds.tekom.de/iirds#EclassIRDI"/&gt;
+   &lt;iirds:relates-to-party&gt;
+    &lt;iirds:Party rdf:about="http://myCompany.com/supplier/SupCo"&gt;
+      &lt;iirds:has-party-role rdf:resource="http://iirds.tekom.de/iirds#Supplier"/&gt;
+      &lt;iirds:relates-to-vcard&gt;
+        &lt;vcard:Organization rdf:about="http://supco.com/about"&gt;
+          &lt;vcard:fn&gt;SupCo Ltd.&lt;/vcard:fn&gt;
+        &lt;/vcard:Organization&gt;
+      &lt;/iirds:relates-to-vcard&gt;
+    &lt;/iirds:Party&gt;
+  &lt;/iirds:relates-to-party&gt;
+&lt;/iirds:ClassificationDomain&gt;
+</pre>

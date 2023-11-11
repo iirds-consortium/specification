@@ -6,12 +6,11 @@ Information units <em title="MAY in RFC 2119 context" class="rfc2119">MAY</em> b
 
 An information object <em title="MUST in RFC 2119 context" class="rfc2119">MUST</em> have an absolute IRI and <em title="MAY in RFC 2119 context" class="rfc2119">MAY</em> be related to additional identifications via the `iirds:has-identity` property.
 
-<pre class="example" title="An Information object with two language variants. The English variant has two revisions, the German only one.">
-&lt;rdf:RDF
- xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
- xmlns:iirds="http://iirds.tekom.de/iirds#"
- xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+<aside class="example" title="Information object with two language variants">
 
+Example of an information object with two topics in different languages. The English variant has two revisions, the German only one.
+
+<pre>
 &lt;iirds:InformationObject rdf:about="http://myCompany.com/informationobjects/io_1"/>
 
 &lt;iirds:Topic rdf:about="http://myCompany.com/versions/io_1/en/1">
@@ -55,7 +54,50 @@ An information object <em title="MUST in RFC 2119 context" class="rfc2119">MUST<
     &lt;/iirds:Rendition&gt;
   &lt;/iirds:has-rendition&gt;
 &lt;/iirds:Topic&gt;
-    
-&lt;/rdf:RDF&gt;
-
 </pre>
+</aside>
+
+<aside class="example" title="Multi-language PDF document">
+
+Example of a multi-language PDF document (de, en, fr), modeled with one `iirds:Document` instance for each language.
+
+<pre>
+&lt;iirds:InformationObject rdf:about="http://myCompany.com/mounting-rotor/v1" /&gt;
+  
+&lt;iirds:Document rdf:about="http://myCompany.com/mounting/v1/de"&gt;
+  &lt;iirds:title&gt;Rotor montieren&lt;/iirds:title&gt;
+  &lt;iirds:language&gt;de&lt;/iirds:language&gt;
+  &lt;iirds:is-version-of rdf:resource="http://myCompany.com/mounting-rotor/v1"/&gt;
+  &lt;iirds:has-rendition&gt;
+    &lt;iirds:Rendition&gt;
+      &lt;iirds:format&gt;pdf&lt;/iirds:format&gt;
+      &lt;iirds:source&gt;rendition/mounting_de-en-fr.pdf&lt;/iirds:source&gt;
+    &lt;/iirds:Rendition&gt;
+  &lt;/iirds:has-rendition&gt;
+&lt;/iirds:Document&gt;
+  
+&lt;iirds:Document rdf:about="http://myCompany.com/mounting/v1/fr"&gt;
+  &lt;iirds:title&gt;Monter le rotor&lt;/iirds:title&gt;
+  &lt;iirds:language&gt;fr&lt;/iirds:language&gt;
+  &lt;iirds:is-version-of rdf:resource="http://myCompany.com/mounting-rotor/v1"/&gt;
+  &lt;iirds:has-rendition&gt;
+    &lt;iirds:Rendition&gt;
+      &lt;iirds:format&gt;pdf&lt;/iirds:format&gt;
+      &lt;iirds:source&gt;rendition/mounting_de-en-fr.pdf&lt;/iirds:source&gt;
+    &lt;/iirds:Rendition&gt;
+  &lt;/iirds:has-rendition&gt;
+&lt;/iirds:Document&gt;
+  
+&lt;iirds:Document rdf:about="http://myCompany.com/mounting/v1/en"&gt;
+  &lt;iirds:title&gt;Mounting the rotor&lt;/iirds:title&gt;
+  &lt;iirds:language&gt;en&lt;/iirds:language&gt;
+  &lt;iirds:is-version-of rdf:resource="http://myCompany.com/mounting-rotor/v1"/&gt;
+  &lt;iirds:has-rendition&gt;
+    &lt;iirds:Rendition&gt;
+      &lt;iirds:format&gt;pdf&lt;/iirds:format&gt;
+      &lt;iirds:source&gt;rendition/mounting_de-en-fr.pdf&lt;/iirds:source&gt;
+    &lt;/iirds:Rendition&gt;
+  &lt;/iirds:has-rendition&gt;
+&lt;/iirds:Document&gt;
+</pre>
+</aside>

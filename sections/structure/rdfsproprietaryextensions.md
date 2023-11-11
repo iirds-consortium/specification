@@ -38,7 +38,7 @@ Proprietary iiRDS extensions <em title="MAY in RFC 2119 context" class="rfc2119"
 Proprietary iiRDS extensions <em title="MAY in RFC 2119 context" class="rfc2119">MAY</em> add classes directly as subclasses to an iiRDS class. 
 
 <aside class="example" title="Adding a proprietary subclass to an iiRDS class">
-This example adds a proprietary class ``Error`` to the iiRDS class ``iirds:Event`` as a subclass. A proprietary implementation adds its proprietary instances to the ``Error`` class and an iiRDS Consumer finds them by searching for instances of the ``iirds:Event`` class.
+This example adds a proprietary class `Error` to the iiRDS class `iirds:Event` as a subclass. A proprietary implementation adds its proprietary instances to the `Error` class and an iiRDS Consumer finds them by searching for instances of the `iirds:Event` class.
 <pre>
     &lt;rdf:RDF xml:lang="de" xmlns:iirds="http://iirds.tekom.de/iirds#"
       xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -52,7 +52,7 @@ This example adds a proprietary class ``Error`` to the iiRDS class ``iirds:Event
 </pre>
 </aside>
 
-Proprietary iiRDS extensions <em title="MAY in RFC 2119 context" class="rfc2119">MAY</em> add proprietary classes as equivalent classes. The property ``rdfs:subClassOf`` expresses equivalence of classes. 
+Proprietary iiRDS extensions <em title="MAY in RFC 2119 context" class="rfc2119">MAY</em> add proprietary classes as equivalent classes. The property `rdfs:subClassOf` expresses equivalence of classes. 
 
 <pre class="example" title="Adding a proprietary class as an equivalent class">
     &lt;rdfs:Class rdf:about="http://myCompany.com/myProject#ProductPart">
@@ -67,7 +67,7 @@ Proprietary iiRDS extensions <em title="MAY in RFC 2119 context" class="rfc2119"
 Proprietary iiRDS extensions <em title="MAY in RFC 2119 context" class="rfc2119">MAY</em> add proprietary properties as a subproperty of an iiRDS property. Proprietary properties <em title="MUST in RFC 2119 context" class="rfc2119">MUST</em> comply with domain and range of the iiRDS property.
 
 <aside class="example" title="Adding a proprietary property as a subproperty of an iiRDS property">
-This example adds a proprietary property ``has-maintenance-interval`` that relates ``iirds:InformationUnit`` to ``iirds:MaintenanceInterval``.
+This example adds a proprietary property `has-maintenance-interval` that relates `iirds:InformationUnit` to `iirds:MaintenanceInterval`.
 <pre>
     &lt;rdf:Property rdf:about="http://www.myCompany.com/iirds/myExtension#has-maintenance-interval">
         &lt;rdfs:subPropertyOf rdf:resource="http://iirds.tekom.de/iirds#has-planning-time"/>

@@ -17,7 +17,7 @@ This document defines the intelligent information Request and Delivery Standard:
 
 ## Status of this document
 
-This document is published by the **iiRDS Consortium** and specifies version 1.1 of iiRDS.
+This document is published by the **iiRDS Consortium** and specifies version 1.2 of iiRDS.
 
 If you wish to make comments regarding this document, please send them to comment.iirds@tekom.de.
   
@@ -78,6 +78,8 @@ The keywords *MAY*, *MUST*, *MUST NOT*, *OPTIONAL*, *RECOMMENDED*, *REQUIRED*, a
 ### [6.8 Administrative Metadata](sections/structure/rdfsadministrative.md)
 
 ### [6.9 Navigation](sections/structure/rdfsnavigation.md)
+
+### [6.10 Class Constraints](sections/structure/rdfsclassconstraints.md)
 
 ## 7. iiRDS Domains and Proprietary Extensions
   

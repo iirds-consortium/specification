@@ -9,6 +9,7 @@ For the purposes of this document, the following terms and definitions apply.
 - *Blank node:* (also called bnode) is a node in an RDF graph representing a resource for which an URI or literal is not given. For the W3C definition, see [here](https://www.w3.org/TR/2014/REC-rdf11-concepts-20140225/#section-blank-nodes).
 - *Directory Structure:* navigation hierarchy for information units, for example, a table of contents.
 - *DITA:* Darwin Information Typing Architecture or Document Information Typing Architecture (DITA) is an XML data model for authoring and publishing. For further information follow the [link](http://docs.oasis-open.org/dita/dita/v1.3/dita-v1.3-part0-overview.html) to the OASIS definition.
+- *Docking point:* A docking point is an iiRDS class which is meant to be extended by proprietary subclasses and instances to model company- or industry-specific resources. Other iiRDS classes are also extendable, but at docking points the standard refrains from providing further vocabulary as it is highly user specific.
 - *Domain Extensions:* additional classes and instances that extend the iiRDS core vocabulary. By separating domain-specific vocabulary from the core vocabulary, the standard aims to keep the iiRDS core vocabulary lean and easily accessible.
 - *HTML5:* W3C recommendation from 2014. See [[HTML5]] for details.
 - *iiRDS:* intelligent information Request and Delivery Standard. iiRDS enables applications to exchange technical documentation across suppliers and devices.
