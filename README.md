@@ -1,9 +1,10 @@
 # tekom iiRDS Standard
 
-![iiRDS](https://iirds.org/fileadmin/iiRDS_specification/20201103-1.1-release/images/logos/iiRDS.jpg)
+![iiRDS](https://www.iirds.org/fileadmin/iiRDS_specification/20231110-1.2-release/images/logos/iiRDS.jpg)
 
 **intelligent information Request and Delivery Standard**
-Version 1.1 Release Date 03 November 2020
+
+Version 1.2 Release Date 10 November 2023
 
 **Implementations**
 https://github.com/iirds-consortium/models/

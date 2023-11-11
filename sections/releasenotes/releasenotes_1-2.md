@@ -4,7 +4,7 @@ author:
   - iiRDS Consortium
 permissions: CC BY-ND 4.0
 keyword:
-  - iiRDS 1.1
+  - iiRDS 1.2
 ---
 
 # Release Notes iiRDS 1.2
