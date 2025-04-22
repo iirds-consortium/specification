@@ -14,7 +14,7 @@ https://creativecommons.org/licenses/by-nd/4.0/
 
 ## Abstract
 
-This document defines the intelligent information Request and Delivery Standard: iiRDS.</p>
+This document defines the intelligent information Request and Delivery Standard: iiRDS.
 
 ## Status of this document
 
@@ -22,7 +22,7 @@ This document is published by the **iiRDS Consortium** and specifies version 1.2
 
 If you wish to make comments regarding this document, please send them to comment.iirds@tekom.de.
   
-## 1. Conformance</h1>
+## 1. Conformance
 
 Sections marked as non-normative, as well as all authoring guidelines, diagrams, examples, and notes in this specification are non-normative. Everything else in this specification is normative.
 
@@ -90,7 +90,6 @@ The keywords *MAY*, *MUST*, *MUST NOT*, *OPTIONAL*, *RECOMMENDED*, *REQUIRED*, a
 
 ### [7.3 Proprietary iiRDS Extensions](sections/structure/rdfsproprietaryextensions.md)
 
-  <!-- Content -->
 ## 8. Content formats in iiRDS
 
 ### [8.1 Unrestricted iiRDS vs. iiRDS/A](sections/content/unrestricted_vs_a.md)
@@ -112,8 +111,6 @@ The keywords *MAY*, *MUST*, *MUST NOT*, *OPTIONAL*, *RECOMMENDED*, *REQUIRED*, a
 ### [10.5 Elements](sections/levels/html5format-elements.md)
 
 ### [10.6 Additional Semantic Tagging of Content](sections/levels/html5tagging.md)
-
-[EXAMPLE 46: Tagging](sections/levels/html5tagging-example.html)
 
 ### [10.7 Styling](sections/levels/html5format-styling.md)
 
