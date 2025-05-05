@@ -1,0 +1,37 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix iirds: <http://iirds.tekom.de/iirds#> .
+
+<http://myCompany.com/pim/producttypes> a iirds:IdentityDomain ;
+  iirds:has-identity-type iirds:ProductType .
+
+<http://myCompany.com/prdvr-sr/7093258023> a iirds:ProductVariant ;
+  iirds:has-identity [
+    a iirds:Identity ;
+    iirds:has-identity-domain <http://myCompany.com/serialnumbers> ;
+    iirds:identifier "7093258023" ;
+  ] .
+
+<http://myCompany.com/prdvr-sr/8763258764> a iirds:ProductVariant ;
+  iirds:has-identity [
+    a iirds:Identity ;
+    iirds:has-identity-domain <http://myCompany.com/serialnumbers> ;
+    iirds:identifier "8763258764" ;
+  ] .
+
+<http://myCompany.com/prdvr-tp/TH-1337> a iirds:ProductVariant ;
+  iirds:has-identity [
+    a iirds:Identity ;
+    iirds:has-identity-domain <http://myCompany.com/pim/producttypes> ;
+    iirds:identifier "TH-1337" ;
+  ] .
+
+<http://myCompany.com/serialnumbers> a iirds:IdentityDomain ;
+  iirds:has-identity-type iirds:SerialNumber .
+
+<http://myCompany.com/versions/io_e_1/en/1> a iirds:Topic ;
+  iirds:has-topic-type iirds:GenericTask ;
+  iirds:relates-to-product-variant <http://myCompany.com/prdvr-sr/7093258023>, <http://myCompany.com/prdvr-sr/8763258764>, <http://myCompany.com/prdvr-tp/TH-1337> ;
+  iirds:revision "1" ;
+  iirds:title "Transporting the engine" .
+
+

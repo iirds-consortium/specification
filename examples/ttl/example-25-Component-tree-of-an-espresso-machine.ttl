@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix iirds: <http://iirds.tekom.de/iirds#> .
+
+<http://myCompany.com/iirds/myProject/myPackage#EspressoMachine> a iirds:Component ;
+  rdfs:label "Espresso machine"@en ;
+  iirds:has-component <http://myCompany.com/iirds/myProject/myPackage#Grouphead>, <http://myCompany.com/iirds/myProject/myPackage#Portafilter> .
+
+<http://myCompany.com/iirds/myProject/myPackage#Gasket> a iirds:Component ;
+  rdfs:label "Gasket"@en .
+
+<http://myCompany.com/iirds/myProject/myPackage#Grouphead> a iirds:Component ;
+  rdfs:label "Grouphead"@en ;
+  iirds:has-component <http://myCompany.com/iirds/myProject/myPackage#Gasket>, <http://myCompany.com/iirds/myProject/myPackage#Shower> .
+
+<http://myCompany.com/iirds/myProject/myPackage#Portafilter> a iirds:Component ;
+  rdfs:label "Portafilter"@en .
+
+<http://myCompany.com/iirds/myProject/myPackage#Shower> a iirds:Component ;
+  rdfs:label "Shower"@en .
+
+

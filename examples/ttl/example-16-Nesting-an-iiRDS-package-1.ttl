@@ -1,0 +1,13 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix iirds: <http://iirds.tekom.de/iirds#> .
+
+<http://myCompany.com/iiRDS-nested> a iirds:Package ;
+  iirds:has-rendition [
+    a iirds:Rendition ;
+    iirds:format "application/iirds+zip" ;
+    iirds:source "content/nested-package.iirds" ;
+  ] ;
+  iirds:iiRDSVersion "1.1" ;
+  iirds:is-part-of-package <http://myCompany.com/iiRDS-parent> .
+
+

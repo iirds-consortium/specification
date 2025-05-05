@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:dcterms="http://purl.org/dc/terms/"
+  xmlns:vcard="http://www.w3.org/2006/vcard/ns#"
+  xmlns:iirds="http://iirds.tekom.de/iirds#">
+<iirds:Topic rdf:about="http://myCompany.com/iiRDS/myProject/myPackage/audio_7654">
+    <iirds:has-rendition>
+        <iirds:Rendition>
+            <iirds:format>audio/x-wav</iirds:format>
+            <iirds:source>rendition/Spoken_Words_456.wav</iirds:source>
+            <iirds:has-selector>
+                <iirds:FragmentSelector>
+                    <dcterms:conformsTo rdf:resource="http://www.w3.org/TR/media-frags/"/>
+                    <rdf:value>t=90,210</rdf:value>
+                </iirds:FragmentSelector>
+            </iirds:has-selector>
+        </iirds:Rendition>
+    </iirds:has-rendition>
+</iirds:Topic>
+
+</rdf:RDF>

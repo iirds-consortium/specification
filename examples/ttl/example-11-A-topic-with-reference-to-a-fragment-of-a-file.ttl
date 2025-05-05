@@ -1,0 +1,17 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iirds: <http://iirds.tekom.de/iirds#> .
+
+<http://myCompany.com/iiRDS/myProject/myPackage/topic_1> a iirds:Topic ;
+  iirds:has-rendition [
+    a iirds:Rendition ;
+    iirds:format "application/xml" ;
+    iirds:has-selector [
+      a iirds:FragmentSelector ;
+      dcterms:conformsTo <http://tools.ietf.org/rfc/rfc3023> ;
+      rdf:value "xpointer(id('chptr_1')/Section[1])" ;
+    ] ;
+    iirds:source "rendition/DocBook_Example_1.xml" ;
+  ] .
+
+

@@ -1,0 +1,19 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix iirds: <http://iirds.tekom.de/iirds#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+
+<http://myCompany.com/about> a vcard:Organization ;
+  vcard:fn "My Company of Europe Ltd." ;
+  vcard:organization-name "My Company" ;
+  vcard:organization-unit "Rotor Unit" .
+
+<http://myCompany.com/products> a iirds:Party ;
+  iirds:has-party-role iirds:Manufacturer ;
+  iirds:relates-to-vcard <http://myCompany.com/about> .
+
+<http://myCompany.com/products/Rotor> a iirds:Component ;
+  rdfs:label "Rotor"@en ;
+  iirds:relates-to-party <http://myCompany.com/products> .
+
+

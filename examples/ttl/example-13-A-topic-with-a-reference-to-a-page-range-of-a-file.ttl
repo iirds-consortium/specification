@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iirds: <http://iirds.tekom.de/iirds#> .
+
+<http://myCompany.com/iiRDS/myProject/myPackage/my_manual> a iirds:Topic ;
+  iirds:has-rendition [
+    a iirds:Rendition ;
+    iirds:format "application/pdf" ;
+    iirds:has-selector [
+      a iirds:RangeSelector ;
+      iirds:has-end-selector [
+        a iirds:FragmentSelector ;
+        dcterms:conformsTo <http://tools.ietf.org/rfc/rfc3778> ;
+        rdf:value "page=17" ;
+      ] ;
+      iirds:has-start-selector [
+        a iirds:FragmentSelector ;
+        dcterms:conformsTo <http://tools.ietf.org/rfc/rfc3778> ;
+        rdf:value "page=10" ;
+      ] ;
+    ] ;
+    iirds:source "rendition/My_Manual.pdf" ;
+  ] .
+
+

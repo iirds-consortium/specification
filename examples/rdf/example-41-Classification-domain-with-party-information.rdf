@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:dcterms="http://purl.org/dc/terms/"
+  xmlns:vcard="http://www.w3.org/2006/vcard/ns#"
+  xmlns:iirds="http://iirds.tekom.de/iirds#">
+<iirds:ClassificationDomain rdf:about="http://supco.com/model/eclassBasicIrdi">
+  <rdfs:label xml:lang="en">SupCo ECLASS BASIC Model IRDI</rdfs:label>
+  <iirds:has-classification-type rdf:resource="http://iirds.tekom.de/iirds#EclassIRDI"/>
+   <iirds:relates-to-party>
+    <iirds:Party rdf:about="http://myCompany.com/supplier/SupCo">
+      <iirds:has-party-role rdf:resource="http://iirds.tekom.de/iirds#Supplier"/>
+      <iirds:relates-to-vcard>
+        <vcard:Organization rdf:about="http://supco.com/about">
+          <vcard:fn>SupCo Ltd.</vcard:fn>
+        </vcard:Organization>
+      </iirds:relates-to-vcard>
+    </iirds:Party>
+  </iirds:relates-to-party>
+</iirds:ClassificationDomain>
+
+</rdf:RDF>

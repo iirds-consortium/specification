@@ -1,0 +1,34 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<http://myCompany.com/iirds/externalProductWorld#EspressoMachine> a rdfs:Class ;
+  rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:allValuesFrom [
+      a rdfs:Class ;
+      owl:unionOf ( <http://myCompany.com/iirds/externalProductWorld#Portafilter>
+        <http://myCompany.com/iirds/externalProductWorld#Grouphead> ) ;
+    ] ;
+    owl:onProperty dcterms:hasPart ;
+  ] .
+
+<http://myCompany.com/iirds/externalProductWorld#Gasket> a rdfs:Class, owl:Class .
+
+<http://myCompany.com/iirds/externalProductWorld#Grouphead> a rdfs:Class, owl:Class ;
+  rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:allValuesFrom [
+      a rdfs:Class ;
+      owl:unionOf ( <http://myCompany.com/iirds/externalProductWorld#Shower>
+        <http://myCompany.com/iirds/externalProductWorld#Gasket> ) ;
+    ] ;
+    owl:onProperty dcterms:hasPart ;
+  ] .
+
+<http://myCompany.com/iirds/externalProductWorld#Portafilter> a rdfs:Class, owl:Class .
+
+<http://myCompany.com/iirds/externalProductWorld#Shower> a rdfs:Class, owl:Class .
+
+

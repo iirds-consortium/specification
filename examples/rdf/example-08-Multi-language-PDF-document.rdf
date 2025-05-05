@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:dcterms="http://purl.org/dc/terms/"
+  xmlns:vcard="http://www.w3.org/2006/vcard/ns#"
+  xmlns:iirds="http://iirds.tekom.de/iirds#">
+<iirds:InformationObject rdf:about="http://myCompany.com/mounting-rotor/v1" />
+  
+<iirds:Document rdf:about="http://myCompany.com/mounting/v1/de">
+  <iirds:title>Rotor montieren</iirds:title>
+  <iirds:language>de</iirds:language>
+  <iirds:is-version-of rdf:resource="http://myCompany.com/mounting-rotor/v1"/>
+  <iirds:has-rendition>
+    <iirds:Rendition>
+      <iirds:format>pdf</iirds:format>
+      <iirds:source>rendition/mounting_de-en-fr.pdf</iirds:source>
+    </iirds:Rendition>
+  </iirds:has-rendition>
+</iirds:Document>
+  
+<iirds:Document rdf:about="http://myCompany.com/mounting/v1/fr">
+  <iirds:title>Monter le rotor</iirds:title>
+  <iirds:language>fr</iirds:language>
+  <iirds:is-version-of rdf:resource="http://myCompany.com/mounting-rotor/v1"/>
+  <iirds:has-rendition>
+    <iirds:Rendition>
+      <iirds:format>pdf</iirds:format>
+      <iirds:source>rendition/mounting_de-en-fr.pdf</iirds:source>
+    </iirds:Rendition>
+  </iirds:has-rendition>
+</iirds:Document>
+  
+<iirds:Document rdf:about="http://myCompany.com/mounting/v1/en">
+  <iirds:title>Mounting the rotor</iirds:title>
+  <iirds:language>en</iirds:language>
+  <iirds:is-version-of rdf:resource="http://myCompany.com/mounting-rotor/v1"/>
+  <iirds:has-rendition>
+    <iirds:Rendition>
+      <iirds:format>pdf</iirds:format>
+      <iirds:source>rendition/mounting_de-en-fr.pdf</iirds:source>
+    </iirds:Rendition>
+  </iirds:has-rendition>
+</iirds:Document>
+
+</rdf:RDF>

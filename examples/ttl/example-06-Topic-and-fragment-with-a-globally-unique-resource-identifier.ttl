@@ -1,0 +1,10 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix iirds: <http://iirds.tekom.de/iirds#> .
+
+<https://myCompany.com/iiRDS/myPackage/2017-07-22/123e4567-e89b-12d3-a456-426655440000> a iirds:Topic ;
+  iirds:title "Example Topic" .
+
+<urn:uuid:6e8bc430-9c3a-11d9-9669-0800200c9a66> a iirds:Fragment ;
+  iirds:title "Example Fragment" .
+
+

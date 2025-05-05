@@ -1,0 +1,17 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iirds: <http://iirds.tekom.de/iirds#> .
+
+<http://myCompany.com/iiRDS/myProject/myPackage/audio_7654> a iirds:Topic ;
+  iirds:has-rendition [
+    a iirds:Rendition ;
+    iirds:format "audio/x-wav" ;
+    iirds:has-selector [
+      a iirds:FragmentSelector ;
+      dcterms:conformsTo <http://www.w3.org/TR/media-frags/> ;
+      rdf:value "t=90,210" ;
+    ] ;
+    iirds:source "rendition/Spoken_Words_456.wav" ;
+  ] .
+
+

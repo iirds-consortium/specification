@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:dcterms="http://purl.org/dc/terms/"
+  xmlns:vcard="http://www.w3.org/2006/vcard/ns#"
+  xmlns:iirds="http://iirds.tekom.de/iirds#">
+<iirds:ProductProperty rdf:about="http://myCompany.com/products/NetWeight">
+  <iirds:has-external-classification>
+    <iirds:ExternalClassification>
+      <rdfs:label xml:lang="en">Net Weight</rdfs:label>
+      <iirds:classificationIdentifier>0173-1#02-AAR080#012/0173-1#02-AAQ640#012/0173-1#02-AAF040#007</iirds:classificationIdentifier>
+      <iirds:classificationVersion>13.0</iirds:classificationVersion>
+      <iirds:has-classification-domain rdf:resource="http://supco.com/model/eclassAdvIrdi"/>
+    </iirds:ExternalClassification>
+  </iirds:has-external-classification>
+</iirds:ProductProperty>
+
+<iirds:Component rdf:about="http://myCompany.com/products/InductProxSwitch">
+  <iirds:relates-to-product-feature rdf:resource="http://myCompany.com/products/NetWeight"/>
+  <iirds:has-external-classification>
+    <iirds:ExternalClassification>
+      <rdfs:label xml:lang="en">27-27-40-01 Inductive proximity switch</rdfs:label>
+      <iirds:classificationIdentifier>0173-1---ADVANCED_1_1#01-ADN934#012</iirds:classificationIdentifier>
+      <iirds:classificationVersion>13.0</iirds:classificationVersion>
+      <iirds:has-classification-domain rdf:resource="http://supco.com/model/eclassAdvIrdi"/>
+    </iirds:ExternalClassification>
+  </iirds:has-external-classification>
+</iirds:Component>
+
+</rdf:RDF>

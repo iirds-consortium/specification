@@ -1,0 +1,8 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix iirds: <http://iirds.tekom.de/iirds#> .
+
+<urn:uuid:0d6f0611-e0bd-42c0-a842-b38617d46988> a iirds:Package ;
+  iirds:formatRestriction "A" ;
+  iirds:iiRDSVersion "1.0" .
+
+

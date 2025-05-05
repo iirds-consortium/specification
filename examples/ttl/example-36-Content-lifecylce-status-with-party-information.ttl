@@ -1,0 +1,26 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix iirds: <http://iirds.tekom.de/iirds#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+
+<http://myCompany.com/authors/jdo001> a iirds:Party ;
+  iirds:has-party-role iirds:PerformedBy ;
+  iirds:relates-to-vcard <http://myCompany.com/u/jdo001> .
+
+<http://myCompany.com/io/1312> a iirds:Topic ;
+  iirds:has-content-lifecycle-status [
+    a iirds:ContentLifeCycleStatus ;
+    iirds:dateOfStatus "2018-04-10T15:28:09+01:00" ;
+    iirds:has-content-lifecycle-status-value iirds:Approved ;
+    iirds:relates-to-party <http://myCompany.com/authors/jdo001> ;
+    iirds:statusComment """
+            Updated information on the mounting process.
+        """ ;
+  ] ;
+  iirds:has-topic-type iirds:GenericTask ;
+  iirds:title "Mounting the rotor" .
+
+<http://myCompany.com/u/jdo001> a vcard:Individual ;
+  vcard:fn "Jane Doe" ;
+  vcard:hasEmail <mailto:jdoe@myCompany.com> .
+
+

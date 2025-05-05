@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:dcterms="http://purl.org/dc/terms/"
+  xmlns:vcard="http://www.w3.org/2006/vcard/ns#"
+  xmlns:iirds="http://iirds.tekom.de/iirds#">
+	<iirds:Topic rdf:about="https://myCompany.com/iiRDS/myPackage/2017-07-22/123e4567-e89b-12d3-a456-426655440000">
+		<iirds:title>Example Topic</iirds:title>
+	</iirds:Topic>
+
+	<iirds:Fragment rdf:about="urn:uuid:6e8bc430-9c3a-11d9-9669-0800200c9a66">
+		<iirds:title>Example Fragment</iirds:title>
+	</iirds:Fragment>
+
+</rdf:RDF>

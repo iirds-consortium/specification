@@ -1,0 +1,12 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix iirds: <http://iirds.tekom.de/iirds#> .
+
+<http://myCompany.com/iiRDS/myProject/Adjustable> a iirds:ProductProperty .
+
+<http://myCompany.com/iiRDS/myProject/Cooling> a iirds:ProductFunction .
+
+<http://myCompany.com/iiRDS/myProject/myPackage/topic_567> a iirds:Topic ;
+  iirds:relates-to-product-feature <http://myCompany.com/iiRDS/myProject/Adjustable>, <http://myCompany.com/iiRDS/myProject/Cooling> ;
+  iirds:title "Adjusting the temperature" .
+
+

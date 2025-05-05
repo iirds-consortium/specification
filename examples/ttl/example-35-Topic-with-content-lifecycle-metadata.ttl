@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix iirds: <http://iirds.tekom.de/iirds#> .
+
+<http://myCompany.com/io/1312> a iirds:Topic ;
+  iirds:has-content-lifecycle-status [
+    a iirds:ContentLifeCycleStatus ;
+    iirds:dateOfStatus "2018-04-10T15:28:09+01:00" ;
+    iirds:has-content-lifecycle-status-value iirds:Approved ;
+    iirds:statusComment """
+            Updated information on the mounting process.
+        """ ;
+  ] ;
+  iirds:has-rendition [
+    a iirds:Rendition ;
+    iirds:format "text/html" ;
+    iirds:source "rendition/mounting_en_1.html" ;
+  ] ;
+  iirds:has-topic-type iirds:GenericTask ;
+  iirds:language "en" ;
+  iirds:revision "1" ;
+  iirds:title "Mounting the rotor" .
+
+

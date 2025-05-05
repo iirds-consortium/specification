@@ -1,0 +1,48 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix iirds: <http://iirds.tekom.de/iirds#> .
+
+<http://metadata.example.com/iirds/fragments/E01/languages/en/versions/1> a iirds:Fragment, iirds:Topic ;
+  iirds:has-rendition [
+    a iirds:Rendition ;
+    iirds:format "text/html" ;
+    iirds:source "content/07_Troubleshooting.html" ;
+  ] , [
+    a iirds:Rendition ;
+    iirds:format "text/html" ;
+    iirds:has-selector [
+      a iirds:FragmentSelector ;
+      rdf:value "xpointer(id('fragment-E01'))" ;
+    ] ;
+    iirds:source "content/07_Troubleshooting.html" ;
+  ] ;
+  iirds:has-topic-type iirds:GenericTroubleshooting ;
+  iirds:relates-to-product-lifecycle-phase iirds:Diagnostics, iirds:Fault ;
+  iirds:title "Event code E01", "List of event codes" .
+
+<http://metadata.example.com/iirds/fragments/E04/languages/en/versions/1> a iirds:Fragment ;
+  iirds:has-rendition [
+    a iirds:Rendition ;
+    iirds:format "text/html" ;
+    iirds:has-selector [
+      a iirds:FragmentSelector ;
+      rdf:value "xpointer(id('fragment-E04'))" ;
+    ] ;
+    iirds:source "content/07_Troubleshooting.html" ;
+  ] ;
+  iirds:has-topic-type iirds:GenericTroubleshooting ;
+  iirds:title "Event code E04" .
+
+<http://metadata.example.com/iirds/fragments/E15/languages/en/versions/1> a iirds:Fragment ;
+  iirds:has-rendition [
+    a iirds:Rendition ;
+    iirds:format "text/html" ;
+    iirds:has-selector [
+      a iirds:FragmentSelector ;
+      rdf:value "xpointer(id('fragment-E15'))" ;
+    ] ;
+    iirds:source "content/07_Troubleshooting.html" ;
+  ] ;
+  iirds:has-topic-type iirds:GenericTroubleshooting ;
+  iirds:title "Event code E15" .
+
+

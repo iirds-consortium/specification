@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix iirds: <http://iirds.tekom.de/iirds#> .
+
+<http://myCompany.com/informationobjects/io_1> a iirds:InformationObject .
+
+<http://myCompany.com/versions/io_1/de/1> a iirds:Topic ;
+  iirds:has-rendition [
+    a iirds:Rendition ;
+    iirds:format "text/html" ;
+    iirds:source "rendition/mounting_de_1.html" ;
+  ] ;
+  iirds:has-topic-type iirds:GenericTask ;
+  iirds:is-version-of <http://myCompany.com/informationobjects/io_1> ;
+  iirds:language "de" ;
+  iirds:revision "1" ;
+  iirds:title "Rotor montieren" .
+
+<http://myCompany.com/versions/io_1/en/1> a iirds:Topic ;
+  iirds:has-rendition [
+    a iirds:Rendition ;
+    iirds:format "text/html" ;
+    iirds:source "rendition/mounting_en_1.html" ;
+  ] ;
+  iirds:has-topic-type iirds:GenericTask ;
+  iirds:is-version-of <http://myCompany.com/informationobjects/io_1> ;
+  iirds:language "en" ;
+  iirds:revision "1" ;
+  iirds:title "Mounting the rotor" .
+
+<http://myCompany.com/versions/io_1/en/2> a iirds:Topic ;
+  iirds:has-rendition [
+    a iirds:Rendition ;
+    iirds:format "text/html" ;
+    iirds:source "rendition/mounting_en_2.html" ;
+  ] ;
+  iirds:has-topic-type iirds:GenericTask ;
+  iirds:is-version-of <http://myCompany.com/informationobjects/io_1> ;
+  iirds:language "en" ;
+  iirds:revision "2" ;
+  iirds:title "Mounting the rotor" .
+
+

@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix iirds: <http://iirds.tekom.de/iirds#> .
+
+<http://myCompany.com/products/InductProxSwitch> a iirds:Component ;
+  iirds:has-external-classification [
+    a iirds:ExternalClassification ;
+    rdfs:label "27-27-40-01 Inductive proximity switch"@en ;
+    iirds:classificationIdentifier "0173-1---ADVANCED_1_1#01-ADN934#012" ;
+    iirds:classificationVersion "13.0" ;
+    iirds:has-classification-domain <http://supco.com/model/eclassAdvIrdi> ;
+  ] ;
+  iirds:relates-to-product-feature <http://myCompany.com/products/NetWeight> .
+
+<http://myCompany.com/products/NetWeight> a iirds:ProductProperty ;
+  iirds:has-external-classification [
+    a iirds:ExternalClassification ;
+    rdfs:label "Net Weight"@en ;
+    iirds:classificationIdentifier "0173-1#02-AAR080#012/0173-1#02-AAQ640#012/0173-1#02-AAF040#007" ;
+    iirds:classificationVersion "13.0" ;
+    iirds:has-classification-domain <http://supco.com/model/eclassAdvIrdi> ;
+  ] .
+
+
