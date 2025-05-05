@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:dcterms="http://purl.org/dc/terms/"
+  xmlns:vcard="http://www.w3.org/2006/vcard/ns#"
+  xmlns:iirds="http://iirds.tekom.de/iirds#">
+<iirds:ProductFunction rdf:about="http://myCompany.com/iiRDS/myProject/Cooling"/>
+
+<iirds:ProductProperty rdf:about="http://myCompany.com/iiRDS/myProject/Adjustable"/>    
+
+<iirds:Topic rdf:about="http://myCompany.com/iiRDS/myProject/myPackage/topic_567">
+    <iirds:title>Adjusting the temperature</iirds:title>
+    <iirds:relates-to-product-feature rdf:resource="http://myCompany.com/iiRDS/myProject/Cooling"/>
+    <iirds:relates-to-product-feature rdf:resource="http://myCompany.com/iiRDS/myProject/Adjustable"/>
+</iirds:Topic>
+
+</rdf:RDF>

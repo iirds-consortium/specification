@@ -1,0 +1,18 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix iirds: <http://iirds.tekom.de/iirds#> .
+
+<http://myCompany.com/products/TableFan> a iirds:Component ;
+  iirds:has-external-classification [
+    a iirds:ExternalClassification ;
+    rdfs:label "29-17-01-01 Fan (household)"@en ;
+    iirds:classificationIdentifier "0173-1#01-ACI075#015" ;
+    iirds:classificationVersion "13.0" ;
+    iirds:has-classification-domain <http://supco.com/model/eclassBasicIrdi> ;
+  ] .
+
+<http://supco.com/model/eclassBasicIrdi> a iirds:ClassificationDomain ;
+  rdfs:label "SupCo ECLASS BASIC Model IRDI"@en ;
+  iirds:has-classification-type iirds:EclassIRDI .
+
+

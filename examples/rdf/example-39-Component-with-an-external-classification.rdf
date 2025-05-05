@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:dcterms="http://purl.org/dc/terms/"
+  xmlns:vcard="http://www.w3.org/2006/vcard/ns#"
+  xmlns:iirds="http://iirds.tekom.de/iirds#">
+<iirds:Component rdf:about="http://myCompany.com/products/TableFan">
+  <iirds:has-external-classification>
+    <iirds:ExternalClassification>
+      <rdfs:label xml:lang="en">29-17-01-01 Fan (household)</rdfs:label>
+      <iirds:classificationIdentifier>0173-1#01-ACI075#015</iirds:classificationIdentifier>
+      <iirds:classificationVersion>13.0</iirds:classificationVersion>
+      <iirds:has-classification-domain rdf:resource="http://supco.com/model/eclassBasicIrdi"/>
+    </iirds:ExternalClassification>
+  </iirds:has-external-classification>
+</iirds:Component>
+
+<iirds:ClassificationDomain rdf:about="http://supco.com/model/eclassBasicIrdi">
+    <rdfs:label xml:lang="en">SupCo ECLASS BASIC Model IRDI</rdfs:label>
+    <iirds:has-classification-type rdf:resource="http://iirds.tekom.de/iirds#EclassIRDI"/>
+</iirds:ClassificationDomain>  
+
+</rdf:RDF>

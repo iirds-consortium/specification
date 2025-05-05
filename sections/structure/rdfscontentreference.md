@@ -46,7 +46,7 @@ The class `iirds:Selector` references parts of files. The property `iirds:has-se
 * `iirds:RangeSelector`  
    Selects a part of a file by a start and an end identifier.
 
-To select parts of a file, an `iirds:Selector` <em title="MUST in RFC 2119 context" class="rfc2119">MUST</em> have an `rdf:value` and `dcterms:conformsTo`. The value <em title="MUST in RFC 2119 context" class="rfc2119">MUST</em> conform to the standard specified by the property `dcterms:conformsTo`. Only a standard from the following list of fragment selectors <em title="MUST in RFC 2119 context" class="rfc2119">MUST</em> be used: [https://www.w3.org/TR/annotation-model/#fragment-selector].
+To select parts of a file, an `iirds:Selector` <em title="MUST in RFC 2119 context" class="rfc2119">MUST</em> have an `rdf:value` and `dcterms:conformsTo`. The value <em title="MUST in RFC 2119 context" class="rfc2119">MUST</em> conform to the standard specified by the property `dcterms:conformsTo`. Only a standard from the following list of fragment selectors <em title="MUST in RFC 2119 context" class="rfc2119">MUST</em> be used: https://www.w3.org/TR/annotation-model/#h-fragment-selector .
 
 ### Reference Part with Single Identifier
 The `iirds:FragmentSelector` refers to a single identifier in a file. 

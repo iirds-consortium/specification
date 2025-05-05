@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:dcterms="http://purl.org/dc/terms/"
+  xmlns:vcard="http://www.w3.org/2006/vcard/ns#"
+  xmlns:iirds="http://iirds.tekom.de/iirds#">
+<iirds:Component rdf:about="http://myCompany.com/iirds/myProject/myPackage#EspressoMachine">
+    <rdfs:label xml:lang="en">Espresso machine</rdfs:label>
+    <iirds:has-component rdf:resource="http://myCompany.com/iirds/myProject/myPackage#Portafilter"/>
+    <iirds:has-component rdf:resource="http://myCompany.com/iirds/myProject/myPackage#Grouphead"/>
+</iirds:Component> 
+    
+<iirds:Component rdf:about="http://myCompany.com/iirds/myProject/myPackage#Portafilter">
+    <rdfs:label xml:lang="en">Portafilter</rdfs:label>
+</iirds:Component> 
+    
+<iirds:Component rdf:about="http://myCompany.com/iirds/myProject/myPackage#Grouphead">
+    <rdfs:label xml:lang="en">Grouphead</rdfs:label>
+    <iirds:has-component rdf:resource="http://myCompany.com/iirds/myProject/myPackage#Gasket"/>
+    <iirds:has-component rdf:resource="http://myCompany.com/iirds/myProject/myPackage#Shower"/>
+</iirds:Component>
+    
+<iirds:Component rdf:about="http://myCompany.com/iirds/myProject/myPackage#Gasket">
+    <rdfs:label xml:lang="en">Gasket</rdfs:label>
+</iirds:Component> 
+    
+<iirds:Component rdf:about="http://myCompany.com/iirds/myProject/myPackage#Shower">
+    <rdfs:label xml:lang="en">Shower</rdfs:label>
+</iirds:Component>   
+
+</rdf:RDF>

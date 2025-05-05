@@ -1,0 +1,9 @@
+    <rdf:RDF xml:lang="de" xmlns:iirds="http://iirds.tekom.de/iirds#"
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+        <rdfs:Class rdf:about="http://myCompany.com/myProject#Error">
+            <rdfs:label xml:lang="en">Error</rdfs:label>
+            <rdfs:label xml:lang="de">Fehler</rdfs:label>
+            <rdfs:subClassOf rdf:resource="http://iirds.tekom.de/iirds#Event"/>
+        </rdfs:Class>
+    </rdf:RDF>

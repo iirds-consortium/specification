@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:dcterms="http://purl.org/dc/terms/"
+  xmlns:vcard="http://www.w3.org/2006/vcard/ns#"
+  xmlns:iirds="http://iirds.tekom.de/iirds#">
+<iirds:DirectoryNode rdf:about="http://myCompany.de/iirds/myPackage/manual_1">
+    <rdfs:label>Table of Contents</rdfs:label>
+    <iirds:relates-to-information-unit 
+        rdf:resource="http://myCompany.de/iirds/myPackage/document"/>  
+    <iirds:has-directory-structure-type 
+        rdf:resource="http://iirds.tekom.de/iirds#TableOfContents" />
+    <iirds:has-first-child>
+        <iirds:DirectoryNode>
+            <iirds:relates-to-information-unit 
+                rdf:resource="http://myCompany.de/iirds/myPackage/topic_1"/>
+            <rdfs:label>Topic 1</rdfs:label>
+            <iirds:has-next-sibling>
+                <iirds:DirectoryNode>
+                    <iirds:relates-to-information-unit
+                        rdf:resource="http://myCompany.de/iirds/myPackage/topic_2"/>
+                    <iirds:has-next-sibling 
+                        rdf:resource="http://iirds.tekom.de/iirds#nil"/>
+                </iirds:DirectoryNode>
+            </iirds:has-next-sibling>            
+        </iirds:DirectoryNode>
+    </iirds:has-first-child>
+    <iirds:has-next-sibling rdf:resource="http://iirds.tekom.de/iirds#nil"/>
+</iirds:DirectoryNode>
+
+</rdf:RDF>

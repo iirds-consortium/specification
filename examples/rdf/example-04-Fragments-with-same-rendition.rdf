@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:dcterms="http://purl.org/dc/terms/"
+  xmlns:vcard="http://www.w3.org/2006/vcard/ns#"
+  xmlns:iirds="http://iirds.tekom.de/iirds#">
+<iirds:Topic rdf:about="http://metadata.example.com/iirds/fragments/E01/languages/en/versions/1">
+	<iirds:title>List of event codes</iirds:title>
+	<iirds:has-rendition>
+		<iirds:Rendition>
+			<iirds:format>text/html</iirds:format>
+			<iirds:source>content/07_Troubleshooting.html</iirds:source>
+		</iirds:Rendition>
+	</iirds:has-rendition>
+	<iirds:relates-to-product-lifecycle-phase rdf:resource="http://iirds.tekom.de/iirds#Fault"/>
+	<iirds:relates-to-product-lifecycle-phase rdf:resource="http://iirds.tekom.de/iirds#Diagnostics"/>
+	<iirds:has-topic-type rdf:resource="http://iirds.tekom.de/iirds#GenericTroubleshooting"/>
+</iirds:Topic>
+<iirds:Fragment rdf:about="http://metadata.example.com/iirds/fragments/E01/languages/en/versions/1">
+	<iirds:title>Event code E01</iirds:title>
+	<iirds:has-rendition>
+		<iirds:Rendition>
+			<iirds:format>text/html</iirds:format>
+			<iirds:source>content/07_Troubleshooting.html</iirds:source>
+			<iirds:has-selector>
+				<iirds:FragmentSelector>
+					<rdf:value>xpointer(id('fragment-E01'))</rdf:value>
+				</iirds:FragmentSelector>
+			</iirds:has-selector>
+		</iirds:Rendition>
+	</iirds:has-rendition>
+	<iirds:relates-to-product-lifecycle-phase rdf:resource="http://iirds.tekom.de/iirds#Fault"/>
+	<iirds:relates-to-product-lifecycle-phase rdf:resource="http://iirds.tekom.de/iirds#Diagnostics"/>
+	<iirds:has-topic-type rdf:resource="http://iirds.tekom.de/iirds#GenericTroubleshooting"/>
+</iirds:Fragment>
+<iirds:Fragment rdf:about="http://metadata.example.com/iirds/fragments/E04/languages/en/versions/1">
+	<iirds:title>Event code E04</iirds:title>
+	<iirds:has-rendition>
+		<iirds:Rendition>
+			<iirds:format>text/html</iirds:format>
+			<iirds:source>content/07_Troubleshooting.html</iirds:source>
+			<iirds:has-selector>
+				<iirds:FragmentSelector>
+					<rdf:value>xpointer(id('fragment-E04'))</rdf:value>
+				</iirds:FragmentSelector>
+			</iirds:has-selector>
+		</iirds:Rendition>
+	</iirds:has-rendition>
+	<iirds:has-topic-type rdf:resource="http://iirds.tekom.de/iirds#GenericTroubleshooting"/>
+</iirds:Fragment>
+<iirds:Fragment rdf:about="http://metadata.example.com/iirds/fragments/E15/languages/en/versions/1">
+	<iirds:title>Event code E15</iirds:title>
+	<iirds:has-rendition>
+		<iirds:Rendition>
+			<iirds:format>text/html</iirds:format>
+			<iirds:source>content/07_Troubleshooting.html</iirds:source>
+			<iirds:has-selector>
+				<iirds:FragmentSelector>
+					<rdf:value>xpointer(id('fragment-E15'))</rdf:value>
+				</iirds:FragmentSelector>
+			</iirds:has-selector>
+		</iirds:Rendition>
+	</iirds:has-rendition>
+	<iirds:has-topic-type rdf:resource="http://iirds.tekom.de/iirds#GenericTroubleshooting"/>
+</iirds:Fragment>
+
+
+</rdf:RDF>

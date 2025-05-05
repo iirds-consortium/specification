@@ -1,0 +1,3 @@
+iirds:has-directory-structure-type a puml:InlineProperty.
+iirds:relates-to-information-unit    puml:arrow puml:right.
+iirds:nil                          a puml:Inline.

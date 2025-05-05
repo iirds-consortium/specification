@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:dcterms="http://purl.org/dc/terms/"
+  xmlns:vcard="http://www.w3.org/2006/vcard/ns#"
+  xmlns:iirds="http://iirds.tekom.de/iirds#">
+    <iirds:Package rdf:about="urn:uuid:0d6f0611-e0bd-42c0-a842-b38617d46988">
+        <iirds:iiRDSVersion>1.0</iirds:iiRDSVersion>
+        <iirds:formatRestriction>A</iirds:formatRestriction>
+    </iirds:Package>
+
+</rdf:RDF>

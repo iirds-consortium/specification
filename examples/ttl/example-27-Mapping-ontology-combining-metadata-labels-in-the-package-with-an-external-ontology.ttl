@@ -1,0 +1,13 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://myCompany.com/iirds/myProject/myPackage#EspressoMachine> rdfs:seeAlso <http://myCompany.com/iirds/externalProductWorld#EspressoMachine> .
+
+<http://myCompany.com/iirds/myProject/myPackage#Gasket> rdfs:seeAlso <http://myCompany.com/iirds/externalProductWorld#Gasket> .
+
+<http://myCompany.com/iirds/myProject/myPackage#Grouphead> rdfs:seeAlso <http://myCompany.com/iirds/externalProductWorld#Grouphead> .
+
+<http://myCompany.com/iirds/myProject/myPackage#Portafilter> rdfs:seeAlso <http://myCompany.com/iirds/externalProductWorld#Portafilter> .
+
+<http://myCompany.com/iirds/myProject/myPackage#Shower> rdfs:seeAlso <http://myCompany.com/iirds/externalProductWorld#Shower> .
+
+

@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix iirds: <http://iirds.tekom.de/iirds#> .
+
+<http://myCompany.com/cms1/modules> a iirds:IdentityDomain .
+
+<http://myCompany.com/cms1/pubs> a iirds:IdentityDomain .
+
+<http://myCompany.com/cms1/versions> a iirds:IdentityDomain .
+
+<http://myCompany.com/informationobjects/io_1> a iirds:InformationObject ;
+  iirds:has-identity [
+    a iirds:Identity ;
+    iirds:has-identity-domain <http://myCompany.com/cms1/modules> ;
+    iirds:identifier "89761" ;
+  ] .
+
+<http://myCompany.com/versions/io_1/en/1> a iirds:Topic ;
+  iirds:has-identity [
+    a iirds:Identity ;
+    iirds:has-identity-domain <http://myCompany.com/cms1/versions> ;
+    iirds:identifier "4531" ;
+  ] , [
+    a iirds:Identity ;
+    iirds:has-identity-domain <http://myCompany.com/pubs> ;
+    iirds:identifier "V6952" ;
+  ] ;
+  iirds:has-topic-type iirds:GenericTask ;
+  iirds:revision "1" ;
+  iirds:title "Mounting the rotor" .
+
+

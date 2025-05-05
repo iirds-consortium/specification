@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:dcterms="http://purl.org/dc/terms/"
+  xmlns:vcard="http://www.w3.org/2006/vcard/ns#"
+  xmlns:iirds="http://iirds.tekom.de/iirds#">
+<iirds:ProductVariant rdf:about="http://myCompany.com/products/TableFan">
+  <iirds:has-identity>
+    <iirds:Identity>
+      <iirds:identifier>871321</iirds:identifier>
+      <iirds:has-identity-domain rdf:resource="http://myCompany.com/products/Items"/>
+    </iirds:Identity>
+  </iirds:has-identity>
+  <rdfs:label>Table fan</rdfs:label>
+</iirds:ProductVariant>
+
+</rdf:RDF>

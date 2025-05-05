@@ -1,0 +1,18 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix iirds: <http://iirds.tekom.de/iirds#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+
+<http://myCompany.com/supplier/SupCo> a iirds:Party ;
+  iirds:has-party-role iirds:Supplier ;
+  iirds:relates-to-vcard <http://supco.com/about> .
+
+<http://supco.com/about> a vcard:Organization ;
+  vcard:fn "SupCo Ltd." .
+
+<http://supco.com/model/eclassBasicIrdi> a iirds:ClassificationDomain ;
+  rdfs:label "SupCo ECLASS BASIC Model IRDI"@en ;
+  iirds:has-classification-type iirds:EclassIRDI ;
+  iirds:relates-to-party <http://myCompany.com/supplier/SupCo> .
+
+

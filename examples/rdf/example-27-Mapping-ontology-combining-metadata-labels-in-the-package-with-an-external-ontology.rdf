@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:dcterms="http://purl.org/dc/terms/"
+  xmlns:vcard="http://www.w3.org/2006/vcard/ns#"
+  xmlns:iirds="http://iirds.tekom.de/iirds#">
+ <rdf:Description rdf:about="http://myCompany.com/iirds/myProject/myPackage#EspressoMachine">
+   <rdfs:seeAlso rdf:resource="http://myCompany.com/iirds/externalProductWorld#EspressoMachine"/>
+ </rdf:Description>
+ <rdf:Description rdf:about="http://myCompany.com/iirds/myProject/myPackage#Portafilter">
+   <rdfs:seeAlso rdf:resource="http://myCompany.com/iirds/externalProductWorld#Portafilter"/>
+ </rdf:Description>
+ <rdf:Description rdf:about="http://myCompany.com/iirds/myProject/myPackage#Grouphead">
+   <rdfs:seeAlso rdf:resource="http://myCompany.com/iirds/externalProductWorld#Grouphead"/>
+ </rdf:Description>
+ <rdf:Description rdf:about="http://myCompany.com/iirds/myProject/myPackage#Shower">
+   <rdfs:seeAlso rdf:resource="http://myCompany.com/iirds/externalProductWorld#Shower"/>
+ </rdf:Description>
+ <rdf:Description rdf:about="http://myCompany.com/iirds/myProject/myPackage#Gasket">
+   <rdfs:seeAlso rdf:resource="http://myCompany.com/iirds/externalProductWorld#Gasket"/>
+ </rdf:Description>
+
+</rdf:RDF>

@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix iirds: <http://iirds.tekom.de/iirds#> .
+
+<http://myCompany.de/iirds/myPackage/manual_1> a iirds:DirectoryNode ;
+  rdfs:label "Table of Contents" ;
+  iirds:has-directory-structure-type iirds:TableOfContents ;
+  iirds:has-first-child [
+    a iirds:DirectoryNode ;
+    rdfs:label "Topic 1" ;
+    iirds:has-next-sibling [
+      a iirds:DirectoryNode ;
+      iirds:has-next-sibling iirds:nil ;
+      iirds:relates-to-information-unit <http://myCompany.de/iirds/myPackage/topic_2> ;
+    ] ;
+    iirds:relates-to-information-unit <http://myCompany.de/iirds/myPackage/topic_1> ;
+  ] ;
+  iirds:has-next-sibling iirds:nil ;
+  iirds:relates-to-information-unit <http://myCompany.de/iirds/myPackage/document> .
+
+
