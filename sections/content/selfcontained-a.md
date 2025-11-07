@@ -1,7 +1,7 @@
 
 # Self-contained iiRDS/A Packages
 
-An iiRDS package is self-contained if all URIs used in the iiRDS XHTML5 files point to local resources contained in the package except for the following cross-reference mechanisms:
+An iiRDS package is self-contained if all URIs used in the <a>iiRDS XHTML5</a> files point to local resources contained in the package except for the following cross-reference mechanisms:
 
 <dl>
   <dt>attribute `href`</dt>

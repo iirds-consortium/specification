@@ -1,11 +1,8 @@
-# Diagrams
-
 This directory contains diagrams for iiRDS
 
 .uxf files are UMLet diagrams. They can be edited using the free tool UMLet, downloadable from http://www.umlet.com/
 .svg, .png, .pdf are exports from the UMLet diagrams.
 
-## List of Diagrams
 
 * `iirds-classes`: Complete class diagram
 * `iirds-informationunits`: Class diagram for information units only
@@ -17,7 +14,7 @@ This directory contains diagrams for iiRDS
 
 [iiRDS class diagram](iirds-classes.png)
 
-[iirRDS information units classes](iirds-informationunits.png)
+[iiRDS information units classes](iirds-informationunits.png)
 
 [iiRDS direct information unit metadata classes](iirds-iu-metadata.png)
 

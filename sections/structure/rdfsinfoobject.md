@@ -6,10 +6,8 @@ Information units <em title="MAY in RFC 2119 context" class="rfc2119">MAY</em> b
 
 An information object <em title="MUST in RFC 2119 context" class="rfc2119">MUST</em> have an absolute IRI and <em title="MAY in RFC 2119 context" class="rfc2119">MAY</em> be related to additional identifications via the `iirds:has-identity` property.
 
-<aside class="example" title="Information object with two language variants">
-
-Example of an information object with two topics in different languages. The English variant has two revisions, the German only one.
-
+<aside class="example" title="Information object with two information unit revisions">
+An information object with two topics in different revisions.
 <pre>
 &lt;iirds:InformationObject rdf:about="http://myCompany.com/informationobjects/io_1"/>
 
@@ -39,20 +37,6 @@ Example of an information object with two topics in different languages. The Eng
       &lt;iirds:source&gt;rendition/mounting_en_2.html&lt;/iirds:source&gt;
       &lt;/iirds:Rendition&gt;
     &lt;/iirds:has-rendition&gt;  
-&lt;/iirds:Topic&gt;
-
-&lt;iirds:Topic rdf:about="http://myCompany.com/versions/io_1/de/1"&gt;
-  &lt;iirds:title&gt;Rotor montieren&lt;/iirds:title&gt;
-  &lt;iirds:language&gt;de&lt;/iirds:language&gt;
-  &lt;iirds:revision&gt;1&lt;/iirds:revision&gt;
-  &lt;iirds:is-version-of rdf:resource="http://myCompany.com/informationobjects/io_1"/&gt;
-  &lt;iirds:has-topic-type rdf:resource="http://iirds.tekom.de/iirds#GenericTask"/&gt;
-  &lt;iirds:has-rendition&gt;
-    &lt;iirds:Rendition&gt;
-      &lt;iirds:format&gt;text/html&lt;/iirds:format&gt;
-      &lt;iirds:source&gt;rendition/mounting_de_1.html&lt;/iirds:source&gt;
-    &lt;/iirds:Rendition&gt;
-  &lt;/iirds:has-rendition&gt;
 &lt;/iirds:Topic&gt;
 </pre>
 </aside>

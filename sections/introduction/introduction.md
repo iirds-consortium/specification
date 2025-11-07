@@ -5,14 +5,18 @@ iiRDS is a standard for the delivery of intelligent information in the scope of 
 
 iiRDS consists of:
 
-* A vocabulary for the metadata provided with the content. The vocabulary is specialized for and restricted to the domain of technical documentation or user assistance. iiRDS uses an RDF schema as technical format. See [The iiRDS Metadata Model in the RDF Schema](#the-iirds-metadata-model-in-the-rdf-schema)
+* A vocabulary for the metadata provided with the content. The vocabulary is specialized for and restricted to the domain of technical documentation or user assistance. iiRDS uses an RDF schema as technical format. See [iiRDS Metadata Model and Schema](#iirds-metadata-model-and-schema)
 * A package format for the exchange of packages with intelligent information between different systems, for example web portals or content delivery servers. The package format uses ZIP and has a predefined folder structure for content and RDF metadata. See [iiRDS Packages and Container](#iirds-package-and-container).
 
 iiRDS provides a common vocabulary for technical documentation content that enables users and applications to search and retrieve content based on common terms. Examples are standardized terms for product lifecycle phases (such as maintenance and operation) and information types (such as task and learning). iiRDS does not standardize terms that are defined by the manufacturer or supplier of the product, such as component names or product features. For these cases, iiRDS provides docking points that enable iiRDS Generators to add their custom vocabulary. iiRDS is also extendable outside of docking points, but at docking points the standard refrains from providing further vocabulary as it is highly user specific.
 
 iiRDS is capable of processing many file formats and different levels of granularity, for example classic PDF files, 3D animations, as well as highly structured XML topics. The intelligent part (i.e. contextualization) of iiRDS is not achieved by structured content but by metadata. 
 
-For the content files delivery in the package, iiRDS Generators use arbitrary content formats or the restricted iiRDS HTML5 format. The restricted format consists of a predefined set of XHTML elements and media formats for maximum compatibility between iiRDS Consumers. Packages with this format are called <a>iiRDS/A package</a>s. See [iiRDS XHTML5 Format](#iirds-xhtml5-format).
+For the content files delivery in the package, standard iiRDS uses arbitrary content formats.
+In addition to <a>unrestricted iiRDS</a>, there are two restricted <a>iiRDS Variants</a>: <a>iiRDS/A</a> is restricted in terms of the content formats, which consists of a predefined set of XHTML elements and media formats for maximum compatibility between iiRDS Consumers. See [iiRDS XHTML5 Format](#iirds-xhtml5-format).
+
+<a>iiRDS/H</a> focuses on handover documentation, is even more restricted in terms of the content formats and makes further specifications regarding the use of the metadata.
+
 
 ## Purpose of iiRDS
 iiRDS is a standard for delivering packages with user assistance content that include both content and metadata. The metadata are delivered in an RDF file and use the iiRDS vocabulary. iiRDS Generators can extend the predefined iiRDS vocabulary with custom classes and instances, according to the rules for proprietary extensions. See [iiRDS Domains and Proprietary Extensions](#iirds-domains-and-proprietary-extensions).
@@ -21,7 +25,7 @@ iiRDS enables the exchange and assembly of digital user assistance content acros
 
 iiRDS does not stipulate any requirements regarding the tools and formats used for authoring the content.
 
-Package information in iiRDS/A is suitable for long-term archiving. iiRDS Generators can use iiRDS/A packages that have predefined, restricted content formats and are self-contained. 
+Package information in both iiRDS/A and iiRDS/H are suitable for long-term archiving. Both use predefined, restricted content formats and are self-contained. 
 
 ## iiRDS in the Context of Other Standardization Initiatives
 

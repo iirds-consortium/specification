@@ -1,7 +1,7 @@
 
 # Elements
 
-The following sections list the complete set of HTML5 elements available in iiRDS XHTML5. The element names are each linked to the HTML5 recommendation.
+The following sections list the complete set of HTML5 elements available in <a>iiRDS XHTML5</a>. The element names are each linked to the HTML5 recommendation.
 
 **Attributes**: Only [global attributes](#global-attributes) and element-specific attributes specified in the iiRDS XHTML5 specification <em title="MUST in RFC 2119 context" class="rfc2119">MUST</em> be used.
 

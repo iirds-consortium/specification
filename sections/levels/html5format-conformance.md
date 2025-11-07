@@ -1,7 +1,7 @@
 
 # Conformance Criteria
 
-iiRDS XHTML5 content <em title="MUST in RFC 2119 context" class="rfc2119">MUST</em> fulfill all of the following criteria:
+<a>iiRDS XHTML5</a> content <em title="MUST in RFC 2119 context" class="rfc2119">MUST</em> fulfill all of the following criteria:
 
 * Document properties
 

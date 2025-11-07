@@ -1,5 +1,5 @@
 
-Media in iiRDS/A packages <em title="MUST in RFC 2119 context" class="rfc2119">MUST</em> use the formats listed in this section. An unrestricted iiRDS package uses any media format.
+Media in <a>iiRDS/A packages</a> <em title="MUST in RFC 2119 context" class="rfc2119">MUST</em> use the formats listed in this section. An unrestricted iiRDS package uses any media format.
 
 # Text Formats
 
@@ -39,7 +39,7 @@ The following restrictions apply to the SVG format:
 - Only static language features of SVG that correspond to the feature string http://www.w3.org/TR/SVG11/feature#SVG-static <em title="MUST in RFC 2119 context" class="rfc2119">MUST</em> be used.
 - All linked resources (e.g. CSS, graphics, fonts) <em title="MUST in RFC 2119 context" class="rfc2119">MUST</em> be included in the iiRDS/A package.
 - Only JPG and PNG graphics according to this section <em title="MUST in RFC 2119 context" class="rfc2119">MUST</em> be used.
-- Reference to SVG media in iiRDS XHTML5 <em title="MUST in RFC 2119 context" class="rfc2119">MUST</em> use <code>&#60;img src="[filename]"/&gt;</code>.
+- Reference to SVG media in <a>iiRDS XHTML5</a> <em title="MUST in RFC 2119 context" class="rfc2119">MUST</em> use <code>&#60;img src="[filename]"/&gt;</code>.
 
 
 # Video Formats

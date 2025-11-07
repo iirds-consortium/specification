@@ -52,7 +52,7 @@ The following example illustrates how to model a simple table of contents in iiR
 
 As the root directory node has no following sibling on the same hierarchy level, it forms a linked list with only one member\. To close the linked list with only one element, the root directory node has `iirds:nil` as the next sibling\. The next hierarchy level contains a linked list with directory nodes referencing chapter topic 1 and chapter topic 2\. The first directory node on chapter level has an additional label "Topic 1"\. The iiRDS Consumer uses the additional label for rendering in the directory structure\. The second directory node on chapter level has no additional label\. The iiRDS Consumer uses the title of the referenced information unit for rendering\. In this example, the instance topic\_2 has the title "Transportation"\.
 
-
+Serialization in RDF 1.1 XML syntax:
 <pre>
 &lt;iirds:DirectoryNode rdf:about="http://myCompany.de/iirds/myPackage/manual_1"&gt;
     &lt;rdfs:label&gt;Table of Contents&lt;/rdfs:label&gt;
@@ -79,13 +79,49 @@ As the root directory node has no following sibling on the same hierarchy level,
 &lt;/iirds:DirectoryNode&gt;
 </pre>
 
+Serialization in JSON-LD 1.1 syntax:
+<pre>
+"@graph": [
+  {
+    "@type": "iirds:DirectoryNode",
+    "@id": "http://myCompany.de/iirds/myPackage/manual_1",
+    "rdfs:label": "Table of Contents",
+    "iirds:relates-to-information-unit": {
+      "@id": "http://myCompany.de/iirds/myPackage/document"
+    },
+    "iirds:has-directory-structure-type": {
+      "@id": "iirds:TableOfContents"
+    },
+    "iirds:has-first-child": {
+      "@type": "iirds:DirectoryNode",
+      "iirds:relates-to-information-unit": {
+        "@id": "http://myCompany.de/iirds/myPackage/topic_1"
+      },
+      "rdfs:label": "Topic 1",
+      "iirds:has-next-sibling": {
+        "@type": "iirds:DirectoryNode",
+        "iirds:relates-to-information-unit": {
+          "@id": "http://myCompany.de/iirds/myPackage/topic_2"
+        },
+        "iirds:has-next-sibling": {
+          "@id": "iirds:nil"
+        }
+      }
+    },
+    "iirds:has-next-sibling": {
+      "@id": "iirds:nil"
+    }
+  }
+]
+</pre>
+
 An iiRDS Consumer renders the `iirds:DirectoryNode` structure as follows:
 
 <div style="border-style:solid;border-width:0.5pt;margin:1em;">
     <h4 style="margin-top:0pt">Table of Contents</h4>
     <div style="margin-left:1em;">
         <p>Topic 1</p>
-        <p>Transportation </p>
+        <p>Transportation</p>
     </div>
 </div>
 

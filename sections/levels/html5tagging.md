@@ -5,10 +5,10 @@ The attribute `data-role` on HTML5 elements <em title="MAY in RFC 2119 context" 
 
 If an iiRDS package contains content with hazard statements, then the iiRDS package <em title="MUST in RFC 2119 context" class="rfc2119">MUST</em> always provide the applicable safety alert symbols and signal words.
 
-<div class="note">**NOTE**
-
-The major objective of semantic tagging with `data-role` is to enable iiRDS Consumers to render information correctly on a display device.  Hazard statements have a predefined structure not sufficiently reflected by the HTML5 element structure. A hazard statement consists of a safety alert symbol, a signal word, a message panel, and a symbol panel.
-</div>
+<div class="note">
+	<p>The major objective of semantic tagging with `data-role` is to enable iiRDS Consumers to render information correctly on a display device.  Hazard statements have a predefined structure not sufficiently reflected by the HTML5 element structure. A hazard statement consists of a safety alert symbol, a signal word, a message panel, and a symbol panel.
+	</p>
+</div>    
 
 The `data-role` attribute <em title="MUST in RFC 2119 context" class="rfc2119">MUST</em> be used only in the situations described here. The attribute values given in the following table <em title="MUST in RFC 2119 context" class="rfc2119">MUST</em> be used.
 

@@ -1,10 +1,10 @@
 # tekom iiRDS Standard
 
-![iiRDS](https://www.iirds.org/fileadmin/iiRDS_specification/20231110-1.2-release/images/logos/iiRDS.jpg)
+![iiRDS](images/logos/iiRDS.jpg)
 
 **intelligent information Request and Delivery Standard**
 
-Version 1.2 Release Date 10 November 2023
+Version 1.3 Release Date 03 November 2025
 
 **Implementations**
 https://github.com/iirds-consortium/models/
@@ -18,7 +18,7 @@ This document defines the intelligent information Request and Delivery Standard:
 
 ## Status of this document
 
-This document is published by the **iiRDS Consortium** and specifies version 1.2 of iiRDS.
+This document is published by the **iiRDS Consortium** and specifies version 1.3 of iiRDS.
 
 If you wish to make comments regarding this document, please send them to comment.iirds@tekom.de.
   
@@ -80,7 +80,9 @@ The keywords *MAY*, *MUST*, *MUST NOT*, *OPTIONAL*, *RECOMMENDED*, *REQUIRED*, a
 
 ### [6.9 Navigation](sections/structure/rdfsnavigation.md)
 
-### [6.10 Class Constraints](sections/structure/rdfsclassconstraints.md)
+### [6.10 Language and Translation](sections/structure/translation.md)
+
+### [6.11 Class Constraints](sections/structure/rdfsclassconstraints.md)
 
 ## 7. iiRDS Domains and Proprietary Extensions
   
@@ -90,34 +92,34 @@ The keywords *MAY*, *MUST*, *MUST NOT*, *OPTIONAL*, *RECOMMENDED*, *REQUIRED*, a
 
 ### [7.3 Proprietary iiRDS Extensions](sections/structure/rdfsproprietaryextensions.md)
 
-## 8. Content formats in iiRDS
+## 8. Restrictions and Content Formats in iiRDS
 
-### [8.1 Unrestricted iiRDS vs. iiRDS/A](sections/content/unrestricted_vs_a.md)
+#### [8.1.1 Unrestricted iiRDS vs. restricted iiRDS](sections/content/unrestricted_vs_a.md)
 
-### [8.2 Self-contained iiRDS/A Packages](sections/content/selfcontained-a.md)
+### [8.2 iiRDS/A](sections/content/selfcontained-a.md)
 
-## [9. iiRDS/A Media Formats](sections/levels/mediaformats.md)
+### [8.3 iiRDS/H](sections/content/restricted_h.md)
 
-## 10. iiRDS XHTML5 Format
+## A. iiRDS RDF Schema Reference
 
-### [10.1 Overview](sections/levels/html5format-overview.md)
-
-### [10.2 iiRDS XHTML5](sections/levels/html5format-format.md)
-
-### [10.3 Conformance Criteria](sections/levels/html5format-conformance.md)
-
-### [10.4 Global Attributes](sections/levels/html5format-globalattributes.md)
-
-### [10.5 Elements](sections/levels/html5format-elements.md)
-
-### [10.6 Additional Semantic Tagging of Content](sections/levels/html5tagging.md)
-
-### [10.7 Styling](sections/levels/html5format-styling.md)
-
-## A. Appendix
-
-### [A.1-4 iiRDS RDF Schema Reference](sections/structure/rdfsreference.md)
+### [A.1-5 iiRDS RDF Schema Reference](sections/structure/rdfsreference.md)
   
-### [A.5 iiRDS Metadata Class Diagram](sections/structure/rdfsdiagrams.md)
+### [A.6 iiRDS Metadata Class Diagram](sections/structure/rdfsdiagrams.md)
 
-## [B. References](sections/structure/references.md)
+## B. iiRDS XHTML5 Format
+
+### [B.1 Overview](sections/levels/html5format-overview.md)
+
+### [B.2 iiRDS XHTML5](sections/levels/html5format-format.md)
+
+### [B.3 Conformance Criteria](sections/levels/html5format-conformance.md)
+
+### [B.4 Global Attributes](sections/levels/html5format-globalattributes.md)
+
+### [B.5 Elements](sections/levels/html5format-elements.md)
+
+### [B.6 Additional Semantic Tagging of Content](sections/levels/html5tagging.md)
+
+### [B.7 Styling](sections/levels/html5format-styling.md)
+
+## [C. References](sections/structure/references.md)

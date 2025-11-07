@@ -175,7 +175,7 @@ of</panel_attributes>
       <h>162</h>
     </coordinates>
     <panel_attributes>lt=-
-m1=0..*
+m1=0..1
 relates-to-party</panel_attributes>
     <additional_attributes>40.0;10.0;40.0;160.0;10.0;160.0</additional_attributes>
   </element>
@@ -188,7 +188,7 @@ relates-to-party</panel_attributes>
       <h>216</h>
     </coordinates>
     <panel_attributes>lt=-
-m1=0..*
+m1=0..1
 
 relates-to-party</panel_attributes>
     <additional_attributes>70.0;10.0;70.0;220.0;10.0;220.0</additional_attributes>
@@ -263,10 +263,36 @@ purpose: Literal [0..1]
       <h>171</h>
     </coordinates>
     <panel_attributes>lt=-
-m1=0..*
+m1=0..1
 
 
 relates-to-party</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;170.0;110.0;170.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>297</x>
+      <y>90</y>
+      <w>144</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Class&gt;&gt;
+*ClassificationDomain*
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>432</x>
+      <y>90</y>
+      <w>207</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m2=0..1
+relates-to-party</panel_attributes>
+    <additional_attributes>10.0;20.0;190.0;20.0;190.0;60.0</additional_attributes>
   </element>
 </diagram>

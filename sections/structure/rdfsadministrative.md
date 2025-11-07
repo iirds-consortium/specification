@@ -71,7 +71,7 @@ Instances of class `iirds:IdentityDomain` <em title="MUST in RFC 2119 context" c
 &lt;/rdf:RDF&gt;
 </pre>
 
-<aside class="example" title="Product with an identity used for an item number">
+<aside class="example" title="Product with an identity used for a serial number">
 
 The identifier reflects the identity of the product variant in an external system, for example a product information management system.
 
@@ -80,12 +80,17 @@ The identifier reflects the identity of the product variant in an external syste
   &lt;iirds:has-identity&gt;
     &lt;iirds:Identity&gt;
       &lt;iirds:identifier&gt;871321&lt;/iirds:identifier&gt;
-      &lt;iirds:has-identity-domain rdf:resource="http://myCompany.com/products/Items"/&gt;
+      &lt;iirds:has-identity-domain rdf:resource="http://myCompany.com/instances/TableFans"/&gt;
     &lt;/iirds:Identity&gt;
   &lt;/iirds:has-identity&gt;
   &lt;rdfs:label&gt;Table fan&lt;/rdfs:label&gt;
 &lt;/iirds:ProductVariant&gt;
+
+&lt;iirds:IdentityDomain rdf:about="http://myCompany.com/instances/TableFans"&gt;
+  &lt;iirds:has-identity-type rdf:resource="http://iirds.tekom.de/iirds#ObjectInstanceURI"/&gt;
+&lt;/iirds:IdentityDomain&gt;
 </pre>
+
 </aside>
 
 
@@ -98,6 +103,7 @@ The identifier reflects the identity of the product variant in an external syste
 
   &lt;iirds:IdentityDomain rdf:about="http://myCompany.com/supplier/SupCo/products"&gt;
     &lt;rdfs:label xml:lang="en"&gt;SupCo Product IDs&lt;/rdfs:label&gt;
+    &lt;iirds:has-identity-type rdf:resource="http://iirds.tekom.de/iirds#ObjectInstanceURI"/&gt; 
 
     &lt;iirds:relates-to-party&gt;
       &lt;iirds:Party rdf:about="http://myCompany.com/supplier/SupCo"&gt;
@@ -183,9 +189,7 @@ An `iirds:ContentLifecyleStatus` <em title="MAY in RFC 2119 context" class="rfc2
         &lt;/iirds:relates-to-party&gt;
       &lt;/iirds:ContentLifeCycleStatus&gt;
     &lt;/iirds:has-content-lifecycle-status&gt;
-
   &lt;!-- omitted --&gt;
-
   &lt;/iirds:Topic&gt;
 &lt;/rdf:RDF&gt;
 </pre>
@@ -243,7 +247,7 @@ An external classification <em title="MUST in RFC 2119 context" class="rfc2119">
 
 Instances of class `iirds:ClassificationDomain` <em title="MUST in RFC 2119 context" class="rfc2119">MUST</em> have an absolute IRI and <em title="MAY in RFC 2119 context" class="rfc2119">MAY</em> link to the custodian of the domain by the `iirds:has-party` property. Custodians are contained in instances of the `iirds:Party` class.
 
-Instances of class `iirds:ClassificationDomain` <em title="MAY in RFC 2119 context" class="rfc2119">MAY</em> have an `iirds:has-classification-type` relation that specifies the type of the classification in the domain. Three classification types for [[ECLASS]] and [[IEC61360]] are predefined in iiRDS: `http://iirds.tekom.de/iirds#EclassCodedName`,  `http://iirds.tekom.de/iirds#EclassIRDI`, and `http://iirds.tekom.de/iirds#CDD`.
+Instances of class `iirds:ClassificationDomain` <em title="MAY in RFC 2119 context" class="rfc2119">MAY</em> have an `iirds:has-classification-type` relation that specifies the type of the classification in the domain. 
 
 <aside class="example" title="Component with an external classification">
 The component `TableFan` has an external classification. The type of the classification is determined by the `iirds:ClassificationDomain` and its `iirds:has-classification-type`.
@@ -260,8 +264,8 @@ The component `TableFan` has an external classification. The type of the classif
 &lt;/iirds:Component&gt;
 
 &lt;iirds:ClassificationDomain rdf:about="http://supco.com/model/eclassBasicIrdi"&gt;
-    &lt;rdfs:label xml:lang="en"&gt;SupCo ECLASS BASIC Model IRDI&lt;/rdfs:label&gt;
-    &lt;iirds:has-classification-type rdf:resource="http://iirds.tekom.de/iirds#EclassIRDI"/&gt;
+  &lt;rdfs:label xml:lang="en"&gt;SupCo ECLASS BASIC Model IRDI&lt;/rdfs:label&gt;
+  &lt;iirds:has-classification-type rdf:resource="http://iirds.tekom.de/iirds#EclassIRDI"/&gt;
 &lt;/iirds:ClassificationDomain&gt;  
 </pre>
 </aside>
@@ -310,3 +314,48 @@ Product property of an inductive proximity switch's net weight with an external 
   &lt;/iirds:relates-to-party&gt;
 &lt;/iirds:ClassificationDomain&gt;
 </pre>
+
+<aside class="example" title="Document classification according to VDI 2770 and DCC (IEC 61355)">
+The VDI 2770 classification identifier `03-02` for documents regarding operation and the IEC 61355 classification identifier &amp;PDC for instructions and manuals are used.
+<pre>
+&lt;iirds:Document rdf:about="http://iirds.org/example/d1_de"&gt;
+  &lt;iirds:title xml:lang="de"&gt;BM01 - Bedienungsanleitung&lt;/iirds:title&gt;
+  &lt;iirds:has-document-type rdf:resource="http://iirds.tekom.de/iirds#OperatingInstructions"/&gt;
+  &lt;iirds:language&gt;de&lt;/iirds:language&gt;
+  &lt;iirds:has-abstract xml:lang="de"&gt;In diesem Dokument geht es um die Bedienung.&lt;/iirds:has-abstract&gt;
+
+  &lt;iirds:has-external-classification&gt;
+    &lt;iirds:ExternalClassification&gt;
+      &lt;iirds:classificationIdentifier&gt;03-02&lt;/iirds:classificationIdentifier&gt;
+      &lt;rdfs:label xml:lang="en"&gt;Operation&lt;/rdfs:label&gt;
+      &lt;rdfs:label xml:lang="de"&gt;Bedienung&lt;/rdfs:label&gt;
+      &lt;iirds:has-classification-domain rdf:resource="http://supco.com/classificationDomains/vdi2770"/&gt;
+    &lt;/iirds:ExternalClassification&gt;
+  &lt;/iirds:has-external-classification&gt;
+
+  &lt;iirds:has-external-classification&gt;
+    &lt;iirds:ExternalClassification&gt;
+      &lt;iirds:classificationIdentifier&gt;&amp;PDC&lt;/iirds:classificationIdentifier&gt;
+      &lt;rdfs:label xml:lang="en"&gt;Instructions and manuals&lt;/rdfs:label&gt;
+      &lt;rdfs:label xml:lang="de"&gt;Anleitungen und Handbücher&lt;/rdfs:label&gt;
+      &lt;iirds:has-classification-domain rdf:resource="http://supco.com/classificationDomains/dcc"/&gt;
+    &lt;/iirds:ExternalClassification&gt;
+  &lt;/iirds:has-external-classification&gt;
+
+  &lt;iirds:has-rendition&gt;
+    &lt;iirds:Rendition&gt;
+      &lt;iirds:format&gt;application/pdf&lt;/iirds:format&gt;
+      &lt;iirds:source&gt;example-instruction_de_en.pdf&lt;/iirds:source&gt;
+    &lt;/iirds:Rendition&gt;
+  &lt;/iirds:has-rendition&gt;
+&lt;/iirds:Document&gt; 
+
+&lt;iirds:ClassificationDomain rdf:about="http://supco.com/classificationDomains/vdi2770"&gt;
+  &lt;iirds:has-classification-type rdf:resource="http://iirds.tekom.de/iirds#VDI2770"/&gt;
+&lt;/iirds:ClassificationDomain&gt;
+
+&lt;iirds:ClassificationDomain rdf:about="http://supco.com/classificationDomains/DCC"&gt;
+  &lt;iirds:has-classification-type rdf:resource="http://iirds.tekom.de/iirds#DCC"/&gt;
+&lt;/iirds:ClassificationDomain&gt;
+</pre>
+</aside>

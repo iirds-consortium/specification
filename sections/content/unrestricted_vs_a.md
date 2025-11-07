@@ -1,7 +1,7 @@
 
 # Unrestricted iiRDS vs. iiRDS/A
 
-An unrestricted <a>iiRDS package</a> <em title="MAY in RFC 2119 context" class="rfc2119">MAY</em> include any kind of content files. An iiRDS/A package <em title="MUST in RFC 2119 context" class="rfc2119">MUST</em> only include content files with a restricted set of formats. 
+An unrestricted <a>iiRDS package</a> <em title="MAY in RFC 2119 context" class="rfc2119">MAY</em> include any kind of content files. An <a>iiRDS/A package</a> <em title="MUST in RFC 2119 context" class="rfc2119">MUST</em> only include content files with a restricted set of formats. 
 
 Type and purpose of the content file are described by the iiRDS metadata. The use of metadata is the same for the restricted and the unrestricted set of content formats. 
 

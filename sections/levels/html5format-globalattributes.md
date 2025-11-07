@@ -3,7 +3,7 @@
 
 Global attributes are attributes common to all HTML elements. They <em title="MAY in RFC 2119 context" class="rfc2119">MAY</em> be applied to all elements.
 
-Only the following subset of "Global attributes" from the HTML5 specification (https://www.w3.org/TR/html5/dom.html#global-attributes) <em title="MUST in RFC 2119 context" class="rfc2119">MUST</em> be used in iiRDS XHTML5 elements:
+Only the following subset of "Global attributes" from the HTML5 specification (https://www.w3.org/TR/html5/dom.html#global-attributes) <em title="MUST in RFC 2119 context" class="rfc2119">MUST</em> be used in <a>iiRDS XHTML5</a> elements:
 - [class](https://www.w3.org/TR/html5/dom.html#classes)
 - [dir](https://www.w3.org/TR/html5/dom.html#the-dir-attribute)
 - [id](https://www.w3.org/TR/html5/dom.html#the-id-attribute)

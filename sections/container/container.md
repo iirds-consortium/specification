@@ -1,14 +1,25 @@
-
 # iiRDS Container
 
 An <dfn>iiRDS container</dfn> is a directory structure that includes all files of an iiRDS package.
 
 An iiRDS container <em title="MUST in RFC 2119 context" class="rfc2119">MUST</em> have a single root directory.
 
-## Metadata Location
+## Metadata Location and RDF Serializations
 An iiRDS container <em title="MUST in RFC 2119 context" class="rfc2119">MUST</em> have a directory `META-INF`. The directory is exclusively used for metadata on the iiRDS package and its contents.
 
-The `META-INF` directory <em title="MUST in RFC 2119 context" class="rfc2119">MUST</em> contain the file `metadata.rdf` containing all metadata in RDF 1.1 XML syntax (see [[!rdf-syntax-grammar]]). It is <em title="RECOMMENDED in RFC 2119 context" class="rfc2119">RECOMMENDED</em> for iiRDS Consumers to ignore any other files in the `META-INF` directory.
+The `META-INF` directory <em title="MUST in RFC 2119 context" class="rfc2119">MUST</em> contain the file `metadata.rdf` containing all metadata in RDF 1.1 XML syntax (see [[rdf-syntax-grammar]]).
+
+If metadata is provided in the JSON-LD 1.1 syntax, the `META-INF` directory <em title="MUST in RFC 2119 context" class="rfc2119">MUST</em> contain the file `metadata.jsonld` (see [[json-ld11]]).
+The file `metadata.jsonld` is optional in <a>unrestricted iiRDS</a>, but mandatory for <a>iiRDS/H package</a>s.
+
+When both `metadata.rdf` and `metadata.jsonld` exist in an iiRDS package, the content of the files <em title="MUST in RFC 2119 context" class="rfc2119">MUST</em> semantically match and be consistent with each other.
+
+It is <em title="RECOMMENDED in RFC 2119 context" class="rfc2119">RECOMMENDED</em> for iiRDS Consumers to ignore any other files in the `META-INF` directory.
+
+<div class="note">
+Metadata in RDF 1.1 XML syntax may become deprecated in future versions of iiRDS.
+</div>
+
 
 ## Content Location
 
@@ -17,12 +28,12 @@ All other files \(content, like PDF, HTML, media, Javascript, CSS, nested iiRDS 
 Exception: The root container <em title="MAY in RFC 2119 context" class="rfc2119">MAY</em> contain additional files that are necessary for the interoperability with other standards, e.g. [[VDI2770]]. iiRDS Consumers <em title="MUST in RFC 2119 context" class="rfc2119">MUST</em> ignore these files if they are not referenced by iiRDS metadata. 
 
 <figure>
-  <img src="iirdscontainer.png" alt="iiRDS Container">
+  <img src="sections/container/iirdscontainer.png" alt="iiRDS Container">
   <figcaption>iiRDS Container Structure</figcaption>
 </figure>
 
 ## Names of Files and Directories
-For file and directory names, all Unicode characters [[!UNICODE]] <em title="MAY in RFC 2119 context" class="rfc2119">MAY</em> be used, with the exception of the following characters:
+For file and directory names, all Unicode characters [[UNICODE]] <em title="MAY in RFC 2119 context" class="rfc2119">MAY</em> be used, with the exception of the following characters:
 
 * <pre>/,”*:&lt;>&#92;</pre>
 * the DEL character (U+007F)

@@ -9,7 +9,7 @@ The properties `iirds:relates-to-component` and `iirds:relates-to-product-varian
 
 An iiRDS package <em title="MAY in RFC 2119 context" class="rfc2119">MAY</em> model a component tree. The property `iirds:has-component` defines `part-of` relations for products and their components. The component tree is a proprietary iiRDS extension, it <em title="MUST in RFC 2119 context" class="rfc2119">MUST</em> be stored in the `metadata.rdf` of the iiRDS package. 
 
-<div class="note">**NOTE**
+<div class="note">
 
 iiRDS does not differentiate between components and products when modeling component trees.
 
@@ -154,6 +154,26 @@ The following figure illustrates the mapping of a component tree in the iiRDS pa
   <figcaption>Mapping of external product ontology</figcaption>
 </figure>
 
+</aside>
+
+
+## Packages related to component trees
+
+Content from <a>iiRDS packages</a> <em title="MAY in RFC 2119 context" class="rfc2119">MAY</em> refer to components that are hierarchically linked to each other. To enable iiRDS consumers to represent these hierarchical relationships, they <em title="MAY in RFC 2119 context" class="rfc2119">MAY</em> be modeled using component trees. The component trees <em title="MAY in RFC 2119 context" class="rfc2119">MAY</em> be modeled across packages.
+
+<aside class="example" title="Supplier documentation">
+The documentation for a component can refer to documents for subcomponents
+located in other iiRDS packages from suppliers.
+These relationships are represented via the components.
+</aside>
+
+The IRI of the component must refer to a product instance if possible.
+
+iiRDS/H packages <em title="MUST in RFC 2119 context" class="rfc2119">MUST</em> use this variant of hierarchy formation and <em title="MUST NOT in RFC 2119 context" class="rfc2119">MUST NOT</em> contain [nested packages](#nested-iirds-packages).
+
+<aside class="example" title="Shows the documentation of a pump, a motor, and a switch, as well as their connections via the component tree.">
+  <img src="sections/container/hierarchies.png" alt="Schematic representation of nested components">
+  <figcaption>Schematic representation of nested components</figcaption>
 </aside>
 
 ## Product Variants

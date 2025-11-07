@@ -8,11 +8,9 @@ Bartsch, Jannik (t3),
 Baumgart, Elmar (t3),
 Baur, Manuel (Voith),
 Börsig, Rainer (FCT),
-Drumm, Oliver (Siemens),
 Fisher, Rochelle,
 Fritz, Michael (tekom),
 Gentz, Stefan (Adobe),
-Glatz, Gerhard (plusmeta),
 Göttel, Sebastian (SCHEMA),
 Günter, Andreas (Trumpf),
 Haldimann, Ralf (ABB),
@@ -25,9 +23,8 @@ Kreutzer, Martin (Empolis),
 Kuprat, Torsten (Acolada),
 von Lepel, Florian (Star)
 Leukert, Sven (SAP),
-Lohmüller, Susanne (tekom),
 Machert,Torsten (Atexis),
-Mahr, Sabine (wordbsign), 
+Mahr, Sabine (sabinemahr), 
 Nanz, Philipp (Docufy),
 Nuding, Win (cognitas),
 Oevermann, Jan (plusmeta), 
@@ -43,16 +40,13 @@ Schrempp, Karsten (Pantopix),
 Schubert, Mark (parson),
 Schuebeler, Johann-Joergen (SMA),
 Schugk, Philipp,
-Stadlbauer, Harald (Ninefeb),
 Steinacker, Achim (intelligent views), 
 Steurer, Stephan (ICMS),
 Suárez-Figueroa, Mari Carmen (Technical University of Madrid),
 Walker, John (Semaku),
 Weber, Joachim (ZF), 
 Wiedenmaier, Markus (practice innovation),
-Ziche, Florian (noxum)
 Ziegler, Wolfgang (Karlsruhe University of Applied Sciences)
-
 
 Special thanks to all members of the tekom Working Group on Terminology
 
@@ -95,11 +89,8 @@ tecteam GmbH
 Carstens & Partner GmbH & Co. KG,
 Dokuschmiede GmbH,
 Gebr. Heller Maschinenfabrik GmbH,
+Intuitive Stack,
 kothes GmbH,
 Ninefeb GmbH,
 SEW-Eurodrive GmbH & Co KG,
-Siemens AG,
-Technically Write IT Ltd.
-
-### Sponsors
-Semcon
+Siemens AG

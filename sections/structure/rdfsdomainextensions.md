@@ -9,8 +9,9 @@ Instances and classes of iiRDS domain extensions are contained in sub-namespaces
   http://iirds.tekom.de/iirds/domain/machinery.
 * *iiRDS Software Domain:* Classes and instances of the iiRDS Software Domain are contained in the namespace
   http://iirds.tekom.de/iirds/domain/software.
+* *iiRDS Handover Documentation Domain:* Classes and instances for use of the restricted <a>iiRDS/H</a> variant are contained in the namespace http://iirds.tekom.de/iirds/domain/handover.
 
-<div class="note">**NOTE**
+<div class="note">
 
 The iiRDS standard does not stipulate how to combine iiRDS core vocabulary with extension vocabulary.
 
